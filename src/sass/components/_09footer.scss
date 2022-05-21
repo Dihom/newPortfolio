@@ -1,0 +1,105 @@
+.footer {
+   display: block;
+}
+.footer-wrapper {
+   padding-left: 22px;
+   padding-right: 22px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top: 1px solid #1E2D3D;
+}
+.footer-left {
+   display: flex;
+   align-items: center;
+   height: 58px;
+   border-right: 1px solid #1E2D3D;
+   position: relative;
+
+
+
+		// .footer-left__text
+
+		&__text {
+         display: flex;
+         align-items: center;
+         height: 58px;
+         padding-right: 18px;
+         @extend %header-font;
+         border-right: 1px solid #1E2D3D;
+		}
+
+		// .footer-left__social
+
+		&__social {
+         display: flex;
+         align-items: center;
+		}
+}
+.vkontakte {
+   margin-right: 14px;
+   margin-left: 14px;
+   transition: fill 0.2s ease-in-out;
+
+   
+}
+
+.footer-left__social::after {
+   content: '';
+   position: absolute;
+   right: 52px;
+   width: 1px;
+   height: 58px;
+   background: #1E2D3D;
+}
+
+
+
+.telegram {
+   margin-right: 14px;
+   margin-left: 14px;
+   transition: fill 0.2s ease-in-out;
+
+}
+
+.telegram:hover, .vkontakte:hover {
+   fill: #607b96;
+   transition: fill 0.2s ease-in-out;
+
+}
+
+
+.footer-right {
+   display: flex;
+   align-items: center;
+
+		// .footer-right__username
+
+		&__username {
+         display: flex;
+         align-items: center;
+         height: 58px;
+         padding-right: 5px;
+         padding-left: 23px;
+         @extend %header-font;
+         border-left: 1px solid #1E2D3D;
+         cursor: pointer;
+         transition: color 0.3s ease-in-out;
+		}
+}
+.github {
+   // cursor: pointer;
+   z-index: 1000;
+   // transition: fill 0.3s ease-in-out;
+
+}
+
+// .footer-right:hover .github {
+//    fill: #fff;
+//    transition: fill 0.2s ease-in-out;
+// }
+
+.footer-right:hover .footer-right__username {
+   color: #fff;
+   transition: color 0.2s ease-in-out;
+}

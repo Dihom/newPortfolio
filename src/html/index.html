@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hello</title>
+   <link rel="stylesheet" href="/css/main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;450;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+@@include('chunk/svgsprite.html')
+
+<div class="wrapper">
+
+   @@include('chunk/header.html')
+
+   <main class="main">
+      <section class="heading">
+         <div class="heading-container">
+            <img src="/img/snake-game/Background_Blurs.png" alt="img" class="game-shadow">
+
+            <div class="heading-left">
+               <p class="heading-left__greeting">Hi all. I am</p>
+               <p class="heading-left__name">Dmitrii Homyakov</p>
+               <p class="heading-left__profession">> Front-end developer</p>
+               <p class="heading-left__game">// complete the game to continue</p>
+               <p class="heading-left__github-page">// you can also see it on my Github page</p>
+               <a href="https://github.com/Juniorhamster" target="_blank" class="heading-left__github-link"><span class="const">const </span><span class="github">githublink </span>= <span class="github-link">https://github.com/Juniorhamster</span></a>
+            </div>
+
+            <div class="heading-right">
+               <div class="heading-right__game">
+
+                  <div class="heading-right__bolts">
+                     <img src="/img/snake-game/bolt.svg" alt="img" class="heading-right__game-bolt-up-left">
+                     <img src="/img/snake-game/bolt.svg" alt="img" class="heading-right__game-bolt-up-right">
+                     <img src="/img/snake-game/bolt.svg" alt="img" class="heading-right__game-bolt-bottom-left">
+                     <img src="/img/snake-game/bolt.svg" alt="img" class="heading-right__game-bolt-bottom-right">
+                  </div>
+                  
+                  <div class="heading-right__game-screen">
+                     <img src="/img/snake-game/Snake-Food.svg" alt="img" class="snake-food">
+                     <img src="/img/snake-game/Snake.svg" alt="snake" class="snake">
+                     <button class="start-game">start-game</button>
+                  </div>
+
+                  <div class="heading-right__game-top">
+                     <div class="heading-right__game-controls">
+                        <div class="heading-right__game-keyboard">
+                           <p class="heading-right__game-text">// use keyboard</p>
+                           <p class="heading-right__game-text">// arrows to play</p>
+                           <img src="/img/snake-game/LeftArrow.svg" alt="img" class="heading-right__game-arrow-left">
+                           <img src="/img/snake-game/UpArrow.svg" alt="img" class="heading-right__game-arrow-up">
+                           <img src="/img/snake-game/RightArrow.svg" alt="img" class="heading-right__game-arrow-right">
+                           <img src="/img/snake-game/DownArrow.svg" alt="img" class="heading-right__game-arrow-down">
+                        </div>
+
+                        <div class="heading-right__game-food">
+                           <p class="heading-right__game-food-text">// food left</p>
+                           <div class="heading-right__game-lives">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food-Eating.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food-Eating.svg" alt="img" class="heading-right__game-live">
+                              <img src="/img/snake-game/Snake-Food-Eating.svg" alt="img" class="heading-right__game-live">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="button-scip">
+                        <button class="heading-right__game-skip">skip</button>
+                     </div>
+                  </div><!--Heading right game top -->
+                  
+               </div><!--Heading right game -->
+            </div><!--Heading right -->
+         </div>
+      </section>
+   </main>
+
+@@include('chunk/footer.html')
+
+</div>
+
+   <script src="js/main.js"></script>
+</body>
+</html>
