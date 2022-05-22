@@ -12,7 +12,7 @@
 .footer-left {
    display: flex;
    align-items: center;
-   height: 58px;
+   // height: 58px;
    border-right: 1px solid #1E2D3D;
    position: relative;
 
@@ -36,12 +36,12 @@
          align-items: center;
 		}
 }
-.vkontakte {
+.vkontakte, .telegram {
    margin-right: 14px;
    margin-left: 14px;
-   transition: fill 0.2s ease-in-out;
-
-   
+   transition-property: fill, opacity;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in-out;
 }
 
 .footer-left__social::after {
@@ -54,18 +54,12 @@
 }
 
 
-
-.telegram {
-   margin-right: 14px;
-   margin-left: 14px;
-   transition: fill 0.2s ease-in-out;
-
-}
-
 .telegram:hover, .vkontakte:hover {
    fill: #607b96;
-   transition: fill 0.2s ease-in-out;
-
+   opacity: 1;
+   transition-property: fill, opacity;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in-out;
 }
 
 
@@ -83,8 +77,8 @@
          padding-left: 23px;
          @extend %header-font;
          border-left: 1px solid #1E2D3D;
-         cursor: pointer;
-         transition: color 0.3s ease-in-out;
+         cursor: default;
+         // transition: color 0.3s ease-in-out;
 		}
 }
 .github {
@@ -99,7 +93,7 @@
 //    transition: fill 0.2s ease-in-out;
 // }
 
-.footer-right:hover .footer-right__username {
-   color: #fff;
-   transition: color 0.2s ease-in-out;
-}
+// .footer-right:hover .footer-right__username {
+//    color: #fff;
+//    transition: color 0.2s ease-in-out;
+// }

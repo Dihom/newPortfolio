@@ -1,33 +1,13 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
+'use strict'; // Слайдер в блоке меню about-me
 
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
-/***/ (function() {
-
-eval("\r\n\r\n// const clickNavOne = document.querySelector('.nav__link--one')\r\n// const clickNavTwo = document.querySelector('.nav__link--two')\r\n// const clickNavThree = document.querySelector('.nav__link--three')\r\n// const clickContact = document.querySelector('.header-contact')\r\n\r\n// clickNavOne.addEventListener('click', function () {\r\n//    clickNavOne.classList.add('header-active')\r\n//    clickNavTwo.classList.remove('header-active')\r\n//    clickNavThree.classList.remove('header-active')\r\n//    clickContact.classList.remove('header-active')\r\n// })\r\n\r\n// clickNavTwo.addEventListener('click', function () {\r\n//    clickNavTwo.classList.add('header-active')\r\n//    clickNavOne.classList.remove('header-active')\r\n//    clickNavThree.classList.remove('header-active')\r\n//    clickContact.classList.remove('header-active')\r\n// })\r\n\r\n// clickNavThree.addEventListener('click', function () {\r\n//    clickNavThree.classList.add('header-active')\r\n//    clickNavOne.classList.remove('header-active')\r\n//    clickNavTwo.classList.remove('header-active')\r\n//    clickContact.classList.remove('header-active')\r\n// })\r\n\r\n// clickContact.addEventListener('click', function () {\r\n//    clickContact.classList.add('header-active')\r\n//    clickNavOne.classList.remove('header-active')\r\n//    clickNavTwo.classList.remove('header-active')\r\n//    clickNavThree.classList.remove('header-active')\r\n// })\n\n//# sourceURL=webpack://newgulpproject/./src/js/main.js?");
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/js/main.js"]();
-/******/ 	
-/******/ })()
-;
+$(document).ready(function () {
+  $('.menu-personal-info__title').click(function (event) {
+    $(this).toggleClass('active').nextAll('.menu-personal-info__subtitle').slideToggle(300);
+  });
+});
+$(document).ready(function () {
+  $('.menu-personal-info__subtitle').click(function (event) {
+    $(this).toggleClass('active').next('.menu-personal-info__text').slideToggle(300);
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsIm5hbWVzIjpbIiQiLCJkb2N1bWVudCIsInJlYWR5IiwiY2xpY2siLCJldmVudCIsInRvZ2dsZUNsYXNzIiwibmV4dEFsbCIsInNsaWRlVG9nZ2xlIiwibmV4dCJdLCJzb3VyY2VzIjpbIm1haW4uanMiXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnXHJcblxyXG4vLyDQodC70LDQudC00LXRgCDQsiDQsdC70L7QutC1INC80LXQvdGOIGFib3V0LW1lXHJcblxyXG4kKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpIHtcclxuICAgJCgnLm1lbnUtcGVyc29uYWwtaW5mb19fdGl0bGUnKS5jbGljayhmdW5jdGlvbihldmVudCkge1xyXG4gICAgICAkKHRoaXMpLnRvZ2dsZUNsYXNzKCdhY3RpdmUnKS5uZXh0QWxsKCcubWVudS1wZXJzb25hbC1pbmZvX19zdWJ0aXRsZScpLnNsaWRlVG9nZ2xlKDMwMClcclxuICAgfSlcclxufSlcclxuXHJcbiQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCkge1xyXG4gICAkKCcubWVudS1wZXJzb25hbC1pbmZvX19zdWJ0aXRsZScpLmNsaWNrKGZ1bmN0aW9uKGV2ZW50KSB7XHJcbiAgICAgICQodGhpcykudG9nZ2xlQ2xhc3MoJ2FjdGl2ZScpLm5leHQoJy5tZW51LXBlcnNvbmFsLWluZm9fX3RleHQnKS5zbGlkZVRvZ2dsZSgzMDApXHJcbiAgIH0pXHJcbn0pXHJcblxyXG5cclxuIl0sIm1hcHBpbmdzIjoiQUFBQSxhLENBRUE7O0FBRUFBLENBQUMsQ0FBQ0MsUUFBRCxDQUFELENBQVlDLEtBQVosQ0FBa0IsWUFBVztFQUMxQkYsQ0FBQyxDQUFDLDRCQUFELENBQUQsQ0FBZ0NHLEtBQWhDLENBQXNDLFVBQVNDLEtBQVQsRUFBZ0I7SUFDbkRKLENBQUMsQ0FBQyxJQUFELENBQUQsQ0FBUUssV0FBUixDQUFvQixRQUFwQixFQUE4QkMsT0FBOUIsQ0FBc0MsK0JBQXRDLEVBQXVFQyxXQUF2RSxDQUFtRixHQUFuRjtFQUNGLENBRkQ7QUFHRixDQUpEO0FBTUFQLENBQUMsQ0FBQ0MsUUFBRCxDQUFELENBQVlDLEtBQVosQ0FBa0IsWUFBVztFQUMxQkYsQ0FBQyxDQUFDLCtCQUFELENBQUQsQ0FBbUNHLEtBQW5DLENBQXlDLFVBQVNDLEtBQVQsRUFBZ0I7SUFDdERKLENBQUMsQ0FBQyxJQUFELENBQUQsQ0FBUUssV0FBUixDQUFvQixRQUFwQixFQUE4QkcsSUFBOUIsQ0FBbUMsMkJBQW5DLEVBQWdFRCxXQUFoRSxDQUE0RSxHQUE1RTtFQUNGLENBRkQ7QUFHRixDQUpEIn0=

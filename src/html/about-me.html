@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About me</title>
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;450;500;700&display=swap" rel="stylesheet">
-</head>
+@@include('chunk/head.html')
 <body>
 
 @@include('chunk/svgsprite.html')
@@ -23,12 +14,34 @@
       <section class="about">
          <div class="about-icons">
             <div class="icons-wrapper">
-               <img src="img/about-me/icons/professional-info-icon.svg" alt="img" class="icons-wrapper__link">
-               <img src="img/about-me/icons/personal-info-icon.svg" alt="img" class="icons-wrapper__link">
-               <img src="img/about-me/icons/hobbies-icon.svg" alt="img" class="icons-wrapper__link">
+               <svg class="icons-wrapper__link professional"><use xlink:href="#professional"></use></svg>
+               <svg class="icons-wrapper__link personal"><use xlink:href="#personal"></use></svg>
+               <svg class="icons-wrapper__link hobbies"><use xlink:href="#hobbies"></use></svg>
             </div>
          </div>
-         <div class="about-menu"></div>
+
+         <div class="about-menu">
+            <div class="menu-wrapper">
+               <div class="menu-personal">
+                  <div class="menu-personal-info">
+                     <div class="menu-personal-info__title">personal-info</div>
+
+                        <div class="menu-personal-info__subtitle"><span><img class="menu-personal-info__folder" src="img/about-me/menu/pink-folder.svg" alt="img" width="15" height="13"></span>bio</div>
+                           <div class="menu-personal-info__text"><span><img class="menu-personal-info__folder" src="img/about-me/menu/info-folder.svg" alt="img" width="16.22" height="14.6"></span>text</div>
+
+                        <div class="menu-personal-info__subtitle"><span><img class="menu-personal-info__folder" src="img/about-me/menu/green-folder.svg" alt="img" width="15" height="13"></span>interests</div>
+                           <div class="menu-personal-info__text">text</div>
+
+                        <div class="menu-personal-info__subtitle"><span><img class="menu-personal-info__folder" src="img/about-me/menu/blue-folder.svg" alt="img" width="15" height="13"></span>education</div>
+                           <div class="menu-personal-info__text">text</div>
+
+                  </div>
+               </div>
+               <div class="menu-contacts">
+
+               </div>
+            </div>
+         </div>
          <div class="about-info"></div>
          <div class="about-snippet"></div>
       </section>

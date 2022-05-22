@@ -1,34 +1,17 @@
 'use strict'
 
-// const clickNavOne = document.querySelector('.nav__link--one')
-// const clickNavTwo = document.querySelector('.nav__link--two')
-// const clickNavThree = document.querySelector('.nav__link--three')
-// const clickContact = document.querySelector('.header-contact')
+// Слайдер в блоке меню about-me
 
-// clickNavOne.addEventListener('click', function () {
-//    clickNavOne.classList.add('header-active')
-//    clickNavTwo.classList.remove('header-active')
-//    clickNavThree.classList.remove('header-active')
-//    clickContact.classList.remove('header-active')
-// })
+$(document).ready(function() {
+   $('.menu-personal-info__title').click(function(event) {
+      $(this).toggleClass('active').nextAll('.menu-personal-info__subtitle').slideToggle(300)
+   })
+})
 
-// clickNavTwo.addEventListener('click', function () {
-//    clickNavTwo.classList.add('header-active')
-//    clickNavOne.classList.remove('header-active')
-//    clickNavThree.classList.remove('header-active')
-//    clickContact.classList.remove('header-active')
-// })
+$(document).ready(function() {
+   $('.menu-personal-info__subtitle').click(function(event) {
+      $(this).toggleClass('active').next('.menu-personal-info__text').slideToggle(300)
+   })
+})
 
-// clickNavThree.addEventListener('click', function () {
-//    clickNavThree.classList.add('header-active')
-//    clickNavOne.classList.remove('header-active')
-//    clickNavTwo.classList.remove('header-active')
-//    clickContact.classList.remove('header-active')
-// })
 
-// clickContact.addEventListener('click', function () {
-//    clickContact.classList.add('header-active')
-//    clickNavOne.classList.remove('header-active')
-//    clickNavTwo.classList.remove('header-active')
-//    clickNavThree.classList.remove('header-active')
-// })

@@ -4,3 +4,13 @@
    line-height: 21px;
    color: $text-color;
 }
+
+%icons-property {
+   width: 24px;
+   height: 24px;
+   fill: #607b96;
+   opacity: 0.4;
+   transition-property: fill, opacity;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in-out;
+}

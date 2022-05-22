@@ -1,6 +1,92 @@
-.icons-wrapper__link {
+.about {
+   position: absolute;
+   left: 0;
+   top: 58px;
+   bottom: 59px;
+   display: flex;
+}
+
+.about-icons {
+   // display: flex;
+   // flex-direction: column;
+   // justify-content: space-between;
+   border-right: 1px solid #1e2d3d;
+   height: 100%;
+}
+
+.icons-wrapper {
    display: flex;
    flex-direction: column;
-   width: 24px;
-   height: 24px;
+   gap: 33px;
+   padding-left: 24px;
+   padding-top: 17px;
+   padding-right: 20px;
+}
+
+.icons-wrapper__link {
+   
+}
+
+.menu-personal {
+
+}
+
+.menu-personal-info {
+   
+   
+}
+
+.menu-personal-info__title {
+   margin-bottom: 27px;
+   padding-top: 10px;
+   padding-left: 34px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+}
+
+.menu-personal-info__subtitle {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-left: 37px;
+   margin-bottom: 9px;
+   // display: none;
+}
+
+.menu-personal-info__subtitle::after {
+   content: url('/img/about-me/menu/arrow.svg');
+   position: absolute;
+   left: 16px;
+   top: 1.5px;
+   width: 7px;
+   height: 12px;
+}
+
+.menu-personal-info__folder {
+   display: block;
+   padding-right: 9px;
+}
+
+.menu-personal-info__text {
+   display: flex;
+   align-items: center;
+   padding-left: 37px;
+   margin-bottom: 9px;
+   // display: none;
+}
+
+
+.active {
+   display: block;
+}
+
+.menu-personal-info__text {
+   
+}
+
+
+.text-two {
+   display: none;
 }

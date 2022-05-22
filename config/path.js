@@ -17,7 +17,7 @@ module.exports = {
    },
 
    js: {
-      src: pathSrc + '/js/*.js',
+      src: pathSrc + '/js/**/*.js',
       watch: pathSrc + '/js/**/*.js',
       dest: pathDest + '/js'
    },

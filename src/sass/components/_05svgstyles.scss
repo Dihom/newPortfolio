@@ -1,13 +1,6 @@
-.vkontakte {
-   width: 24px;
-   height: 24px;
-   fill: #607b9686;
-}
-
-.telegram {
-   width: 24px;
-   height: 24px;
-   fill: #607b9686;
+// Icons property
+.vkontakte, .telegram, .professional, .personal, .hobbies {
+   @extend %icons-property;
 }
 
 .github {

@@ -24,14 +24,15 @@
    font-size: 16px;
    line-height: 21px;
    color: $text-color;
-   transition: color 0.2s ease-in-out;
+   cursor: default;
+   // transition: color 0.2s ease-in-out;
 }
 
-.header-logo:hover {
-   color: #fff;
-   transition: color 0.2s ease-in-out;
+// .header-logo:hover {
+//    color: #fff;
+//    transition: color 0.2s ease-in-out;
 
-}
+// }
 
 .nav { 
    margin-left: 154px;
@@ -72,9 +73,9 @@
          transition: color 0.2s ease-in-out;
       }
 
-      &__link:active, &__link:focus {
-         color: #FEA55F;
-      }
+      // &__link:focus {
+      //    color: #FEA55F;
+      // }
 
       &__link::after {
          content: '';
