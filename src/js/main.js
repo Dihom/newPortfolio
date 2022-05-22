@@ -15,3 +15,25 @@ $(document).ready(function() {
 })
 
 
+// Добавляет-удаляет белый цвет текста папок
+$(document).ready(function() {
+   $('.menu-personal-info__subtitle').click(function(event) {
+      $(this).toggleClass('white-text')
+   })
+})
+
+// Добавляет белый цвет тексту
+$(document).ready(function() {
+   $('.menu-personal-info__text').click(function(event) {
+      $(this).addClass('white-text')
+   })
+})
+
+// Удаляет белый цвет у текста
+$(document).ready(function() {
+   $('.menu-personal-info__subtitle').click(function(event) {
+      $('.menu-personal-info__text').removeClass('white-text')
+   })
+})
+
+

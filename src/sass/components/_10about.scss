@@ -7,9 +7,6 @@
 }
 
 .about-icons {
-   // display: flex;
-   // flex-direction: column;
-   // justify-content: space-between;
    border-right: 1px solid #1e2d3d;
    height: 100%;
 }
@@ -27,59 +24,157 @@
    
 }
 
+.menu-wrapper {
+   width: 243px;
+   height: 100%;
+   border-right: 1px solid #1e2d3d;
+}
+
 .menu-personal {
 
 }
 
-.menu-personal-info {
-   
-   
+.menu-personal-info {   
 }
 
 .menu-personal-info__title {
-   margin-bottom: 27px;
-   padding-top: 10px;
+   position: relative;
+   padding-top: 12px;
    padding-left: 34px;
+   padding-bottom: 30px;
    font-weight: 400;
    font-size: 16px;
    line-height: 21px;
    color: #FFFFFF;
+   cursor: pointer;
+}
+
+.menu-personal-info__title:after {
+   content: url('/img/about-me/menu/bold-arrow.svg');
+   position: absolute;
+   left: 14px;
+   top: 13px;
+   // width: 8.5px;
+   // height: 6px;
+   transform: rotate(-90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.menu-personal-info__title.active:after {
+   transform: rotate(0deg);
+   transition: transform 0.3s ease-in-out;
 }
 
 .menu-personal-info__subtitle {
-   position: relative;
-   display: flex;
-   align-items: center;
-   padding-left: 37px;
-   margin-bottom: 9px;
-   // display: none;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+   color: #607B96;
+   display: none;
+   cursor: pointer;
+   transition: color 0.2s ease-in-out;
 }
 
-.menu-personal-info__subtitle::after {
+// .menu-personal-info__subtitle:hover {
+//    color: #FFFFFF;
+//    transition: color 0.2s ease-in-out;
+// }
+
+.info-subtitle-bio {
+   @extend %about-personal-property;
+}
+
+.info-subtitle-bio::after {
    content: url('/img/about-me/menu/arrow.svg');
+   @extend %about-personal-arrow;
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-bio.active::after {
+   transform: rotate(90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-bio::before {
+   content: url('/img/about-me/menu/pink-folder.svg');
+   @extend %about-personal-folder;
+}
+
+.info-subtitle-interests {
+   @extend %about-personal-property;
+}
+
+.info-subtitle-interests::after {
+   content: url('/img/about-me/menu/arrow.svg');
+   @extend %about-personal-arrow;
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-interests.active::after {
+   transform: rotate(90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-interests::before {
+   content: url('/img/about-me/menu/green-folder.svg');
+   @extend %about-personal-folder;
+}
+
+.info-subtitle-education {
+   @extend %about-personal-property;
+}
+
+.info-subtitle-education::after {
+   content: url('/img/about-me/menu/arrow.svg');
+   @extend %about-personal-arrow;
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-education.active::after {
+   transform: rotate(90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-education::before {
+   content: url('/img/about-me/menu/blue-folder.svg');
+   @extend %about-personal-folder;
+}
+
+.menu-personal-info__text {
+   position: relative;
+   padding-left: 61px;
+   margin-bottom: 12px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+   color: #607B96;
+   display: none;
+   cursor: pointer;
+   transition: color 0.2s ease-in-out;
+}
+
+// .menu-personal-info__text:hover {
+//    color: #FFFFFF;
+//    transition: color 0.2s ease-in-out;
+// }
+
+.menu-personal-info__text:before {
+   content: url('/img/about-me/menu/info-folder.svg');
    position: absolute;
-   left: 16px;
-   top: 1.5px;
+   left: 37px;
+   top: 2.5px;
    width: 7px;
    height: 12px;
 }
 
-.menu-personal-info__folder {
-   display: block;
-   padding-right: 9px;
-}
-
-.menu-personal-info__text {
+.active {
    display: flex;
    align-items: center;
-   padding-left: 37px;
-   margin-bottom: 9px;
-   // display: none;
 }
 
-
-.active {
-   display: block;
+.white-text {
+   color: #FFFFFF;
+   transition: color 0.2s ease-in-out;
 }
 
 .menu-personal-info__text {

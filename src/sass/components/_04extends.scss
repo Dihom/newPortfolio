@@ -1,3 +1,5 @@
+
+// header font color
 %header-font {
    font-weight: 450;
    font-size: 16px;
@@ -5,6 +7,8 @@
    color: $text-color;
 }
 
+
+// All project icons property
 %icons-property {
    width: 24px;
    height: 24px;
@@ -13,4 +17,28 @@
    transition-property: fill, opacity;
    transition-duration: 0.2s;
    transition-timing-function: ease-in-out;
+}
+
+
+// About page -> personal info -> menu property
+%about-personal-arrow {
+   position: absolute;
+   left: 16px;
+   top: 1px;
+   // width: 7px;
+   // height: 12px;
+}
+
+%about-personal-folder {
+   position: absolute;
+   left: 37px;
+   top: 1px;
+   width: 14.44px;
+   height: 13px;
+}
+
+%about-personal-property {
+   position: relative;
+   padding-left: 61px;
+   margin-bottom: 12px;
 }

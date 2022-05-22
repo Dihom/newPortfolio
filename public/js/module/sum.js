@@ -3,3 +3,4 @@
 module.exports = function (a, b) {
   return a + b;
 };
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibW9kdWxlL3N1bS5qcyIsIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJhIiwiYiJdLCJzb3VyY2VzIjpbIm1vZHVsZS9zdW0uanMiXSwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSAoYSwgYikgPT4gYSArIGJcclxuIl0sIm1hcHBpbmdzIjoiOztBQUFBQSxNQUFNLENBQUNDLE9BQVAsR0FBaUIsVUFBQ0MsQ0FBRCxFQUFJQyxDQUFKO0VBQUEsT0FBVUQsQ0FBQyxHQUFHQyxDQUFkO0FBQUEsQ0FBakIifQ==
