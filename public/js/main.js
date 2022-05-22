@@ -7,6 +7,7 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/main.js":
@@ -15,7 +16,7 @@
   \************************/
 /***/ (function() {
 
-eval("// const sum = require('./module/sum.js')\r\n// console.log(sum(2, 10))\n\n//# sourceURL=webpack://newgulpproject/./src/js/main.js?");
+eval("\r\n\r\n// const clickNavOne = document.querySelector('.nav__link--one')\r\n// const clickNavTwo = document.querySelector('.nav__link--two')\r\n// const clickNavThree = document.querySelector('.nav__link--three')\r\n// const clickContact = document.querySelector('.header-contact')\r\n\r\n// clickNavOne.addEventListener('click', function () {\r\n//    clickNavOne.classList.add('header-active')\r\n//    clickNavTwo.classList.remove('header-active')\r\n//    clickNavThree.classList.remove('header-active')\r\n//    clickContact.classList.remove('header-active')\r\n// })\r\n\r\n// clickNavTwo.addEventListener('click', function () {\r\n//    clickNavTwo.classList.add('header-active')\r\n//    clickNavOne.classList.remove('header-active')\r\n//    clickNavThree.classList.remove('header-active')\r\n//    clickContact.classList.remove('header-active')\r\n// })\r\n\r\n// clickNavThree.addEventListener('click', function () {\r\n//    clickNavThree.classList.add('header-active')\r\n//    clickNavOne.classList.remove('header-active')\r\n//    clickNavTwo.classList.remove('header-active')\r\n//    clickContact.classList.remove('header-active')\r\n// })\r\n\r\n// clickContact.addEventListener('click', function () {\r\n//    clickContact.classList.add('header-active')\r\n//    clickNavOne.classList.remove('header-active')\r\n//    clickNavTwo.classList.remove('header-active')\r\n//    clickNavThree.classList.remove('header-active')\r\n// })\n\n//# sourceURL=webpack://newgulpproject/./src/js/main.js?");
 
 /***/ })
 

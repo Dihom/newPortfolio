@@ -5,7 +5,7 @@ const path = require('../config/path.js')
 const app = require('../config/app.js')
 
 // Плагины
-const plumber = require('gulp-plumber')
+// const plumber = require('gulp-plumber')
 const notify = require('gulp-notify')
 const autoprefixer = require('gulp-autoprefixer')
 const csso = require('gulp-csso')
@@ -21,7 +21,7 @@ const sassGlob = require('gulp-sass-glob')
 // Обработка SCSS
 const scss = () => {
    return src(path.scss.src, { sourcemaps: app.isDev})
-      .pipe(plumber())
+      // .pipe(plumber())
       .pipe(sassGlob())
       .pipe(sass())
       // .pipe(webpCss())

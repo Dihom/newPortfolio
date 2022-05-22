@@ -67,10 +67,13 @@
          transition: color 0.2s ease-in-out;
 		}
 
-      &__link:hover, &__link:active, &__link:focus {
+      &__link:hover {
          color: #fff;
          transition: color 0.2s ease-in-out;
+      }
 
+      &__link:active, &__link:focus {
+         color: #FEA55F;
       }
 
       &__link::after {

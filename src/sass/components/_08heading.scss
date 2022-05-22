@@ -91,6 +91,7 @@
          font-weight: 500;
          font-size: 16px;
          line-height: 21px;
+			cursor: default;
 		}
 }
 .const {
@@ -101,18 +102,37 @@
 }
 .github-link {
    color: #E99287;
+	position: relative;
+	cursor: pointer;
+	transition: color 0.2s ease-in-out;	
 }
 
-.github-link::after {
-   content: '';
-   position: absolute;
-   left: 0px;
-   bottom: -2px;
-   height: 3px;
-   width: 0;
-   background: #FEA55F;
-   transition: width 0.4s ease-in-out;
+.github-link:hover {
+	color: #fff;
+	transition: color 0.2s ease-in-out;
 }
+
+// .github-link::after {
+//    content: '';
+//    position: absolute;
+//    left: 0px;
+//    bottom: -6px;
+//    height: 3px;
+//    width: 0;
+//    background: #FEA55F;
+//    transition: width 0.4s ease-in-out;
+// }
+
+// .github-link:hover::after {
+//    content: '';
+//    position: absolute;
+//    left: 0px;
+//    bottom: -6px;
+//    height: 3px;
+//    width: 100%;
+//    background: #FEA55F;
+//    transition: width 0.4s ease-in-out;
+// }
 
 
 .heading-right {
@@ -132,9 +152,9 @@
 			justify-content: flex-end;
 		}
 
-		&__bolts {
-			// position: relative;
-		}
+		// &__bolts {
+		// 	// position: relative;
+		// }
 
 		// .heading-right__game-bolt-up-left
 
@@ -197,10 +217,22 @@
 			padding: 10px 14px;
 			background: #FEA55F;
 			border-radius: 8px;
-			font-weight: 450;
+			font-weight: 500;
 			font-size: 14px;
 			line-height: 18px;
 			color: #01080E;
+			transition-property: color, background;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in-out;
+
+		}
+
+		.start-game:hover {
+			background: #263B50;
+			color: #ffffff;
+			transition-property: color, background;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in-out;
 		}
 
 		// heading-right__game-top
@@ -215,9 +247,9 @@
 
 		// .heading-right__game-controls
 
-		&__game-controls {
+		// &__game-controls {
 			
-		}
+		// }
 
 		// .heading-right__game-keyboard
 
@@ -322,10 +354,16 @@
 			color: #FFFFFF;
 			border: 1px solid #FFFFFF;
 			border-radius: 8px;
+			transition: background 0.2s ease-in-out;
+		}
+
+		&__game-skip:hover {
+			background: #263B50;
+			transition: background 0.2s ease-in-out;
 		}
 }
 
-.button-scip {
+.button-skip {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
