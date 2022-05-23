@@ -25,6 +25,7 @@
    line-height: 21px;
    color: $text-color;
    cursor: default;
+   white-space: nowrap;
    // transition: color 0.2s ease-in-out;
 }
 
@@ -44,6 +45,7 @@
          display: flex;
          align-items: center;
          list-style: none;
+         white-space: nowrap;
 		}
 
       &__list:last-child {
@@ -89,7 +91,6 @@
          transition: width 0.4s ease-in-out;
       }
 
-
       &__link:hover::after {
          width: 100%;
          content: '';
@@ -101,6 +102,7 @@
          transition: width 0.4s ease-in-out;
       }
 }
+
 .header-contact {
    position: relative;
    height: 58px;
@@ -111,6 +113,7 @@
    @extend %header-font;
    border-left: 1px solid #1E2D3D;
    transition: color 0.2s ease-in-out;
+   white-space: nowrap;
 }
 
 .header-contact:hover {

@@ -14,7 +14,7 @@
       <section class="about">
          <div class="about-icons">
             <div class="icons-wrapper">
-               <svg class="icons-wrapper__link professional"><use xlink:href="#professional"></use></svg>
+               <svg class="icons-wrapper__link professional active-icons"><use xlink:href="#professional"></use></svg>
                <svg class="icons-wrapper__link personal"><use xlink:href="#personal"></use></svg>
                <svg class="icons-wrapper__link hobbies"><use xlink:href="#hobbies"></use></svg>
             </div>
@@ -23,10 +23,11 @@
          <div class="about-menu">
             <div class="menu-wrapper">
 
-               <div class="menu-personal">
+               <div class="menu-personal-info">
                   <div class="menu-personal-info__title">personal-info</div>
                </div>
 
+                  <!-- === Menu Personal-info__item === -->
                <div class="menu-personal-info__item">
                   <div class="menu-personal-info__subtitle info-subtitle-bio">bio</div>
                   <div class="menu-personal-info__text">text</div>
@@ -38,10 +39,11 @@
                   <div class="menu-personal-info__text">text</div>
                </div>
 
+                  <!-- === Menu Contacts === -->
                <div class="menu-contacts">
                   <div class="menu-contacts__title">contacts</div>
                   <a href="mailto:juniorham@yandex.ru" class="menu-contacts__email">juniorham@yandex.ru</a>
-                  <a href="tel:89279345557" class="menu-contacts__phone">8-(927)-934-55-57</a>
+                  <a href="tel:89279345557" class="menu-contacts__phone">8[927]934-55-57;</a>
                </div>
                
             </div><!-- === Menu Wrapper === -->
@@ -52,9 +54,10 @@
 
                <div class="about-info-active">
                   <div class="about-info-active__title">personal-info</div>
-                  <div class="about-info-active__close">x</div>
+                  <svg class="about-info-active__close"><use xlink:href="#close-icon"></use></svg>
                </div>
 
+                  <!-- === About Info Item === -->
                <div class="about-info-item">
                   <ul class="about-info-item__text">
                      <li class="about-info-item__stroke"><p class="about-info-item__number">1</p>/**</li>
@@ -74,8 +77,8 @@
                      <li class="about-info-item__stroke"><p class="about-info-item__number">15</p>* officia deserunt mollit anim id est laborum.</li>
                      <li class="about-info-item__stroke"><p class="about-info-item__number">16</p>*/</li>
                   </ul>
-                  <div class="about-info-item__column"></div>
-               </div>
+
+               </div><!-- === About Info Item === -->
 
             </div><!-- === Info Wrapper === -->
          </div><!-- === About Info === -->
@@ -83,22 +86,20 @@
          <div class="about-snippet">
             <div class="snippet-wrapper">
 
-               <div class="about-snippet-top"></div>
-
                <div class="about-snippet-item">
 
                   <div class="about-snippet__title">// Code snippet showcase:</div>
 
                   <div class="about-snippet-user">
                      <div class="about-snippet-username">
-                        <img src="" alt="" class="about-snippet-user__photo">
-                        <div class="div">
+                        <img src="img/about-me/snippet/user-image.png" alt="img" class="about-snippet-user__photo">
+                        <div class="about-snippet-user__info">
                            <div class="about-snippet-user__name">@juniorhamster</div>
                            <div class="about-snippet-user__data">Created 5 months ago</div>
                         </div>
                      </div>
                      <div class="about-snippet-user-details">
-                        <div class="about-snippet-user-details__text">details</div>
+                        <div class="about-snippet-user-details__text text-details">details</div>
                         <div class="about-snippet-user-details__text">0 stars</div>
                      </div>
                   </div><!-- === About Snippet User === -->
@@ -107,21 +108,51 @@
                      <ul class="about-snippet-block__code">
                         <li class="about-snippet-block__text">function initializeModelChunk &lt;T&gt; (chunk: ResolvedModelChunk): T {</li>
                         <li class="about-snippet-block__text">const value: T = parseModel(chunk._response, chunk._value);</li>
-                        <li class="about-snippet-block__text"> const initializedChunk: InitializedChunk<T> = (chunk: any);</li>
-                        <li class="about-snippet-block__text">  initializedChunk._status = INITIALIZED;
-                        </li>
-                        <li class="about-snippet-block__text">  initializedChunk._value = value;
-                        </li>
-                        <li class="about-snippet-block__text">  return value;
-                        </li>
+                        <li class="about-snippet-block__text">const initializedChunk: InitializedChunk&lt;T&gt; = (chunk: any);</li>
+                        <li class="about-snippet-block__text">initializedChunk._status = INITIALIZED;</li>
+                        <li class="about-snippet-block__text">initializedChunk._value = value;</li>
+                        <li class="about-snippet-block__text">return value;</li>
                         <li class="about-snippet-block__text">}</li>
                      </ul>
+                  </div>
+
+                  <div class="about-snippet-details">
+                     <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
+                     <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
+                  </div>
+
+                  <div class="about-snippet-user">
+                     <div class="about-snippet-username">
+                        <img src="img/about-me/snippet/user-image.png" alt="img" class="about-snippet-user__photo">
+                        <div class="div">
+                           <div class="about-snippet-user__name">@juniorhamster</div>
+                           <div class="about-snippet-user__data">Created 9 months ago</div>
+                        </div>
+                     </div>
+                     <div class="about-snippet-user-details">
+                        <div class="about-snippet-user-details__text text-details">details</div>
+                        <div class="about-snippet-user-details__text">0 stars</div>
+                     </div>
+                  </div><!-- === About Snippet User === -->
+
+                  <div class="about-snippet-block">
+                     <ul class="about-snippet-block__code">
+                        <li class="about-snippet-block__text">export function parseModelTuple(</li>
+                        <li class="about-snippet-block__text">response: Response,</li>
+                        <li class="about-snippet-block__text">value: {+[key: string]: JSONValue} | $ReadOnlyArray&lt;JSONValue&gt;,</li>
+                        <li class="about-snippet-block__text">): any {</li>
+                        <li class="about-snippet-block__text">const tuple: [mixed, mixed, mixed, mixed] = (value: any);</li>
+                     </ul>
+                  </div>
+
+                  <div class="about-snippet-details snippet-two">
+                     <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
+                     <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
                   </div>
 
                </div><!-- === About Snippet ITEM === -->
             </div><!-- === Snippet Wrapper === -->
          </div><!-- === About Snippet === -->
-
 
       </section>
 
