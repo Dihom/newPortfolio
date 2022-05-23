@@ -34,6 +34,7 @@
 
 }
 
+
 .menu-personal-info {   
 }
 
@@ -70,7 +71,7 @@
    font-size: 16px;
    line-height: 21px;
    color: #607B96;
-   display: none;
+   // display: none;
    cursor: pointer;
    transition: color 0.2s ease-in-out;
 }
@@ -148,7 +149,7 @@
    font-size: 16px;
    line-height: 21px;
    color: #607B96;
-   display: none;
+   // display: none;
    cursor: pointer;
    transition: color 0.2s ease-in-out;
 }
@@ -177,11 +178,7 @@
    transition: color 0.2s ease-in-out;
 }
 
-.menu-personal-info__text {
-   
-}
-
-
-.text-two {
-   display: none;
+.about-info-item__text li {
+   display: flex;
+   align-items: center;
 }

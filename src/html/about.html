@@ -22,27 +22,107 @@
 
          <div class="about-menu">
             <div class="menu-wrapper">
+
                <div class="menu-personal">
-                  <div class="menu-personal-info">
-                     <div class="menu-personal-info__title">personal-info</div>
-
-                        <div class="menu-personal-info__subtitle info-subtitle-bio">bio</div>
-                           <div class="menu-personal-info__text">text</div>
-
-                        <div class="menu-personal-info__subtitle info-subtitle-interests">interests</div>
-                           <div class="menu-personal-info__text">text</div>
-
-                        <div class="menu-personal-info__subtitle info-subtitle-education">education</div>
-                           <div class="menu-personal-info__text">text</div>
-                  </div>
+                  <div class="menu-personal-info__title">personal-info</div>
                </div>
+
+               <div class="menu-personal-info__item">
+                  <div class="menu-personal-info__subtitle info-subtitle-bio">bio</div>
+                  <div class="menu-personal-info__text">text</div>
+
+                  <div class="menu-personal-info__subtitle info-subtitle-interests">interests</div>
+                  <div class="menu-personal-info__text">text</div>
+
+                  <div class="menu-personal-info__subtitle info-subtitle-education">education</div>
+                  <div class="menu-personal-info__text">text</div>
+               </div>
+
                <div class="menu-contacts">
-                  <div class="menu-personal-info__title">contacts</div>
+                  <div class="menu-contacts__title">contacts</div>
+                  <a href="mailto:juniorham@yandex.ru" class="menu-contacts__email">juniorham@yandex.ru</a>
+                  <a href="tel:89279345557" class="menu-contacts__phone">8-(927)-934-55-57</a>
                </div>
-            </div>
-         </div>
-         <div class="about-info"></div>
-         <div class="about-snippet"></div>
+               
+            </div><!-- === Menu Wrapper === -->
+         </div><!-- === About Menu === -->
+
+         <div class="about-info"><!-- === About Info === -->
+            <div class="info-wrapper">
+
+               <div class="about-info-active">
+                  <div class="about-info-active__title">personal-info</div>
+                  <div class="about-info-active__close">x</div>
+               </div>
+
+               <div class="about-info-item">
+                  <ul class="about-info-item__text">
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">1</p>/**</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">2</p>* About me</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">3</p>* I have 5 years of еxperience in web</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">4</p>* development lorem ipsum dolor sit amet,</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">5</p>* consectetur adipiscing elit, sed do eiusmod</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">6</p>* tempor incididunt ut labore et dolore</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">7</p>* magna aliqua. Ut enim ad minim veniam,</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">8</p>* quis nostrud exercitation ullamco laboris</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">9</p>* nisi ut aliquip ex ea commodo consequat.</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">10</p>* Duis aute irure dolor in reprehenderit in</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">11</p>*</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">12</p>* Duis aute irure dolor in reprehenderit in</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">13</p>* voluptate velit esse cillum dolore eu fugiat</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">14</p>* nulla pariatur. Excepteur sint occaecat</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">15</p>* officia deserunt mollit anim id est laborum.</li>
+                     <li class="about-info-item__stroke"><p class="about-info-item__number">16</p>*/</li>
+                  </ul>
+                  <div class="about-info-item__column"></div>
+               </div>
+
+            </div><!-- === Info Wrapper === -->
+         </div><!-- === About Info === -->
+
+         <div class="about-snippet">
+            <div class="snippet-wrapper">
+
+               <div class="about-snippet-top"></div>
+
+               <div class="about-snippet-item">
+
+                  <div class="about-snippet__title">// Code snippet showcase:</div>
+
+                  <div class="about-snippet-user">
+                     <div class="about-snippet-username">
+                        <img src="" alt="" class="about-snippet-user__photo">
+                        <div class="div">
+                           <div class="about-snippet-user__name">@juniorhamster</div>
+                           <div class="about-snippet-user__data">Created 5 months ago</div>
+                        </div>
+                     </div>
+                     <div class="about-snippet-user-details">
+                        <div class="about-snippet-user-details__text">details</div>
+                        <div class="about-snippet-user-details__text">0 stars</div>
+                     </div>
+                  </div><!-- === About Snippet User === -->
+
+                  <div class="about-snippet-block">
+                     <ul class="about-snippet-block__code">
+                        <li class="about-snippet-block__text">function initializeModelChunk &lt;T&gt; (chunk: ResolvedModelChunk): T {</li>
+                        <li class="about-snippet-block__text">const value: T = parseModel(chunk._response, chunk._value);</li>
+                        <li class="about-snippet-block__text"> const initializedChunk: InitializedChunk<T> = (chunk: any);</li>
+                        <li class="about-snippet-block__text">  initializedChunk._status = INITIALIZED;
+                        </li>
+                        <li class="about-snippet-block__text">  initializedChunk._value = value;
+                        </li>
+                        <li class="about-snippet-block__text">  return value;
+                        </li>
+                        <li class="about-snippet-block__text">}</li>
+                     </ul>
+                  </div>
+
+               </div><!-- === About Snippet ITEM === -->
+            </div><!-- === Snippet Wrapper === -->
+         </div><!-- === About Snippet === -->
+
+
       </section>
 
 
