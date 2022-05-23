@@ -38,6 +38,10 @@
       <path d="M17 4.87793C18.5913 4.87793 20.1174 5.51007 21.2426 6.63529C22.3679 7.76051 23 9.28663 23 10.8779V14.8779C23 16.4692 22.3679 17.9954 21.2426 19.1206C20.1174 20.2458 18.5913 20.8779 17 20.8779H7C5.4087 20.8779 3.88258 20.2458 2.75736 19.1206C1.63214 17.9954 1 16.4692 1 14.8779V10.8779C1 9.28663 1.63214 7.76051 2.75736 6.63529C3.88258 5.51007 5.4087 4.87793 7 4.87793H17ZM10 9.87793H8V11.8779H6V13.8779H7.999L8 15.8779H10L9.999 13.8779H12V11.8779H10V9.87793ZM18 13.8779H16V15.8779H18V13.8779ZM16 9.87793H14V11.8779H16V9.87793Z"/>
    </symbol>
 
+   <symbol id="close-icon" viewBox="0 0 19 19">
+      <path d="M9.34771 8.71879L13.0602 5.00629L14.1207 6.06679L10.4082 9.77929L14.1207 13.4918L13.0602 14.5523L9.34771 10.8398L5.63521 14.5523L4.57471 13.4918L8.28721 9.77929L4.57471 6.06679L5.63521 5.00629L9.34771 8.71879Z"/>
+   </symbol>
+
 </svg>
 
 <div class="wrapper">
@@ -64,7 +68,7 @@
       <section class="about">
          <div class="about-icons">
             <div class="icons-wrapper">
-               <svg class="icons-wrapper__link professional"><use xlink:href="#professional"></use></svg>
+               <svg class="icons-wrapper__link professional active-icons"><use xlink:href="#professional"></use></svg>
                <svg class="icons-wrapper__link personal"><use xlink:href="#personal"></use></svg>
                <svg class="icons-wrapper__link hobbies"><use xlink:href="#hobbies"></use></svg>
             </div>
@@ -73,10 +77,11 @@
          <div class="about-menu">
             <div class="menu-wrapper">
 
-               <div class="menu-personal">
+               <div class="menu-personal-info">
                   <div class="menu-personal-info__title">personal-info</div>
                </div>
 
+                  <!-- === Menu Personal-info__item === -->
                <div class="menu-personal-info__item">
                   <div class="menu-personal-info__subtitle info-subtitle-bio">bio</div>
                   <div class="menu-personal-info__text">text</div>
@@ -88,10 +93,11 @@
                   <div class="menu-personal-info__text">text</div>
                </div>
 
+                  <!-- === Menu Contacts === -->
                <div class="menu-contacts">
                   <div class="menu-contacts__title">contacts</div>
                   <a href="mailto:juniorham@yandex.ru" class="menu-contacts__email">juniorham@yandex.ru</a>
-                  <a href="tel:89279345557" class="menu-contacts__phone">8-(927)-934-55-57</a>
+                  <a href="tel:89279345557" class="menu-contacts__phone">8[927]934-55-57;</a>
                </div>
                
             </div><!-- === Menu Wrapper === -->
@@ -102,9 +108,10 @@
 
                <div class="about-info-active">
                   <div class="about-info-active__title">personal-info</div>
-                  <div class="about-info-active__close">x</div>
+                  <svg class="about-info-active__close"><use xlink:href="#close-icon"></use></svg>
                </div>
 
+                  <!-- === About Info Item === -->
                <div class="about-info-item">
                   <ul class="about-info-item__text">
                      <li class="about-info-item__stroke"><p class="about-info-item__number">1</p>/**</li>
@@ -124,8 +131,8 @@
                      <li class="about-info-item__stroke"><p class="about-info-item__number">15</p>* officia deserunt mollit anim id est laborum.</li>
                      <li class="about-info-item__stroke"><p class="about-info-item__number">16</p>*/</li>
                   </ul>
-                  <div class="about-info-item__column"></div>
-               </div>
+
+               </div><!-- === About Info Item === -->
 
             </div><!-- === Info Wrapper === -->
          </div><!-- === About Info === -->
@@ -133,22 +140,20 @@
          <div class="about-snippet">
             <div class="snippet-wrapper">
 
-               <div class="about-snippet-top"></div>
-
                <div class="about-snippet-item">
 
                   <div class="about-snippet__title">// Code snippet showcase:</div>
 
                   <div class="about-snippet-user">
                      <div class="about-snippet-username">
-                        <img src="" alt="" class="about-snippet-user__photo">
-                        <div class="div">
+                        <img src="img/about-me/snippet/user-image.png" alt="img" class="about-snippet-user__photo">
+                        <div class="about-snippet-user__info">
                            <div class="about-snippet-user__name">@juniorhamster</div>
                            <div class="about-snippet-user__data">Created 5 months ago</div>
                         </div>
                      </div>
                      <div class="about-snippet-user-details">
-                        <div class="about-snippet-user-details__text">details</div>
+                        <div class="about-snippet-user-details__text text-details">details</div>
                         <div class="about-snippet-user-details__text">0 stars</div>
                      </div>
                   </div><!-- === About Snippet User === -->
@@ -157,21 +162,51 @@
                      <ul class="about-snippet-block__code">
                         <li class="about-snippet-block__text">function initializeModelChunk &lt;T&gt; (chunk: ResolvedModelChunk): T {</li>
                         <li class="about-snippet-block__text">const value: T = parseModel(chunk._response, chunk._value);</li>
-                        <li class="about-snippet-block__text"> const initializedChunk: InitializedChunk<t> = (chunk: any);</t></li>
-                        <li class="about-snippet-block__text">  initializedChunk._status = INITIALIZED;
-                        </li>
-                        <li class="about-snippet-block__text">  initializedChunk._value = value;
-                        </li>
-                        <li class="about-snippet-block__text">  return value;
-                        </li>
+                        <li class="about-snippet-block__text">const initializedChunk: InitializedChunk&lt;T&gt; = (chunk: any);</li>
+                        <li class="about-snippet-block__text">initializedChunk._status = INITIALIZED;</li>
+                        <li class="about-snippet-block__text">initializedChunk._value = value;</li>
+                        <li class="about-snippet-block__text">return value;</li>
                         <li class="about-snippet-block__text">}</li>
                      </ul>
+                  </div>
+
+                  <div class="about-snippet-details">
+                     <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
+                     <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
+                  </div>
+
+                  <div class="about-snippet-user">
+                     <div class="about-snippet-username">
+                        <img src="img/about-me/snippet/user-image.png" alt="img" class="about-snippet-user__photo">
+                        <div class="div">
+                           <div class="about-snippet-user__name">@juniorhamster</div>
+                           <div class="about-snippet-user__data">Created 9 months ago</div>
+                        </div>
+                     </div>
+                     <div class="about-snippet-user-details">
+                        <div class="about-snippet-user-details__text text-details">details</div>
+                        <div class="about-snippet-user-details__text">0 stars</div>
+                     </div>
+                  </div><!-- === About Snippet User === -->
+
+                  <div class="about-snippet-block">
+                     <ul class="about-snippet-block__code">
+                        <li class="about-snippet-block__text">export function parseModelTuple(</li>
+                        <li class="about-snippet-block__text">response: Response,</li>
+                        <li class="about-snippet-block__text">value: {+[key: string]: JSONValue} | $ReadOnlyArray&lt;JSONValue&gt;,</li>
+                        <li class="about-snippet-block__text">): any {</li>
+                        <li class="about-snippet-block__text">const tuple: [mixed, mixed, mixed, mixed] = (value: any);</li>
+                     </ul>
+                  </div>
+
+                  <div class="about-snippet-details snippet-two">
+                     <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
+                     <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
                   </div>
 
                </div><!-- === About Snippet ITEM === -->
             </div><!-- === Snippet Wrapper === -->
          </div><!-- === About Snippet === -->
-
 
       </section>
 
