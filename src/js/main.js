@@ -37,3 +37,32 @@
 // })
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//    new TypeIt("#element", {
+//       strings: ["This is my string!"],
+//    }).go();
+// });
+
+// const instance = new TypeIt('#replaceStrings', {
+//    strings: ["Hello", "How are your"],
+//    speed: 200,
+//    breakLines: true,
+//    waitUntilVisible: true,
+//    nextStringDelay: 1000
+// }).go();
+
+// new TypeIt("#myElement")
+//   .type("This is my first string!")
+//   .pause(1000)
+//   .type("Plus a little more.")
+//   .go();
+
+// const instance = new TypeIt('#hi', {
+//    strings: [],
+//    speed: 200,
+//    breakLines: true,
+//    waitUntilVisible: true,
+//    cursor: true,
+//    html: true
+//    // nextStringDelay: 1000 
+// }).go();

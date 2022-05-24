@@ -387,6 +387,7 @@
    position: relative;
    margin-top: 45px;
    border-top: 1px solid #1e2d3d;
+   // overflow: auto;
 
 
 		// .about-snippet__title
@@ -440,8 +441,9 @@
 		// .about-snippet-user__photo
 
 		&__photo {
-         width: 36px;
          margin-right: 10.5px;
+         width: 40px;
+         border-radius: 50%;
 		}
 
       // .about-snippet-user__info
@@ -517,9 +519,34 @@
          font-weight: 450;
          font-size: 14px;
          line-height: 170%;
-         color: #E99287;
+         color: #607B96;
 		}
 }
+
+/*===== Function element color =====*/
+.one-color {
+   color: #E99287;
+}
+
+.two-color {
+   color: #43D9AD;
+}
+
+.three-color {
+   color: #5565E8;
+}
+
+.four-color {
+   color: #C98BDF;
+}
+
+.five-color {
+   color: #FEA55F;
+}
+
+/*===== Function element color =====*/
+
+
 .about-snippet-details {
    margin-bottom: 50px;
    display: flex;
@@ -543,7 +570,13 @@
          width: 18px;
          height: 18px;
          fill: #607B96;
+         transition: fill 0.1s ease-in-out;
 		}
+
+      &__close:hover {
+         fill: #FFFFFF;
+         transition: fill 0.1s ease-in-out;
+      }
 }
 
 .snippet-two {
