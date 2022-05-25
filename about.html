@@ -9,7 +9,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;450;500;700&display=swap" rel="stylesheet">
-   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
@@ -53,13 +53,15 @@
             <div class="header-logo">dmitrii-homyakov</div>
             <nav class="nav">
                   <ul class="nav__list">
-                     <li class="nav__item"><a data-show="on" href="index.html" class="nav__link nav__link--one click">_hello</a></li>
-                     <li class="nav__item"><a data-show="off" href="about.html" class="nav__link nav__link--two click">_about-me</a></li>
-                     <li class="nav__item"><a data-show="off" href="projects.html" class="nav__link nav__link--three click">_projects</a></li>
+                     <li class="nav__item"><a href="index.html" class="nav__link nav__link--one click">_hello</a></li>
+                     <li class="nav__item"><a href="about.html" class="nav__link nav__link--two click">_about-me</a></li>
+                     <li class="nav__item"><a href="projects.html" class="nav__link nav__link--three click">_projects</a></li>
                   </ul>
             </nav>
          </div><!--Header Left -->
-         <a href="contact-me.html" class="header-contact click">_contact-me</a> 
+         <nav>
+            <a href="contact-me.html" class="header-contact nav__link--four click">_contact-me</a> 
+         </nav>
       </div><!--Header Wrapper -->
 </header><!--Header -->
 
@@ -170,9 +172,9 @@
                      </ul>
                   </div>
 
-                  <div class="about-snippet-details">
+                  <div class="about-snippet-details details-one">
                      <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
-                     <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
+                     <!-- <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg> -->
                   </div>
 
                   <div class="about-snippet-user">
@@ -200,7 +202,7 @@
                   </div>
 
                   <div class="about-snippet-details snippet-two">
-                     <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
+                     <p class="about-snippet-details__text details-two">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
                      <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
                   </div>
 
