@@ -90,8 +90,8 @@
       &__item {
          padding-top: 21px;
          padding-bottom: 30px;
-         border-bottom: 1px solid #1e2d3d;
-
+         overflow: hidden;
+         display: none;
       }
 
       // .menu-personal-info__subtitle
@@ -117,20 +117,20 @@
       &__text {
          position: relative;
          padding-left: 61px;
-         margin-bottom: 12px;
+         margin-bottom: 15px;
          font-weight: 400;
          font-size: 16px;
          line-height: 21px;
          color: #607B96;
-         // display: none;
+         display: none;
          cursor: pointer;
          transition: color 0.2s ease-in-out;
       }
 
-      &__text:hover {
-         color: #FFFFFF;
-         transition: color 0.2s ease-in-out;
-      }
+      // &__text:hover {
+      //    color: #FFFFFF;
+      //    transition: color 0.2s ease-in-out;
+      // }
 
       &__text:before {
          content: url('/img/about-me/menu/info-folder.svg');
@@ -219,6 +219,7 @@
          color: #FFFFFF;
          cursor: pointer;
          border-bottom: 1px solid #1e2d3d;
+         border-top: 1px solid #1e2d3d;
 		}
 
       &__title::after {
@@ -586,12 +587,16 @@
 /* Классы для JavaScript===========================================================*/
 
 .active {
-   display: flex;
-   align-items: center;
+   display: block;
 }
 
 .white-text {
    color: #FFFFFF;
+   transition: color 0.2s ease-in-out;
+}
+
+.active-text-color {
+   color: #E99287;
    transition: color 0.2s ease-in-out;
 }
 

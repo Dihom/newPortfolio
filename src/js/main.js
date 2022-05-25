@@ -2,11 +2,66 @@
 
 // Слайдер в блоке меню about-me
 
-// $(document).ready(function() {
-//    $('.menu-personal-info__title').click(function(event) {
-//       $(this).toggleClass('active').nextAll('.menu-personal-info__subtitle').slideToggle(300)
-//    })
-// })
+
+$(document).ready(function() {
+   $('.menu-personal-info__title').click(function() {
+      $(this).toggleClass('active')
+      $('.menu-personal-info__item').slideToggle(300)
+   })
+})
+
+$(document).ready(function() {
+   $('.info-subtitle-bio').click(function() {
+      $(this).toggleClass('active')
+      $(this).toggleClass('white-text')
+      $('.bio').slideToggle(300)
+   })
+})
+
+$(document).ready(function() {
+   $('.info-subtitle-interests').click(function() {
+      $(this).toggleClass('active')
+      $(this).toggleClass('white-text')
+      $('.interests').slideToggle(300)
+   })
+})
+
+$(document).ready(function() {
+   $('.info-subtitle-education').click(function() {
+      $(this).toggleClass('active')
+      $(this).toggleClass('white-text')
+      $('.education').slideToggle(300)
+   })
+})
+
+/** ======= Смена цвета при активной ссылке ==========**/
+
+$(document).ready(function() {
+   $('.bio').click(function() {
+      $(this).addClass('active-text-color')
+      $('.interests').removeClass('active-text-color')
+      $('.education').removeClass('active-text-color')
+   })
+})
+
+$(document).ready(function() {
+   $('.education').click(function() {
+      $(this).addClass('active-text-color')
+      $('.bio').removeClass('active-text-color')
+      $('.interests').removeClass('active-text-color')
+   })
+})
+
+$(document).ready(function() {
+   $('.interests').click(function() {
+      $(this).addClass('active-text-color')
+      $('.bio').removeClass('active-text-color')
+      $('.education').removeClass('active-text-color')
+   })
+})
+
+/** ======= Смена цвета при активной ссылке ==========**/
+
 
 // $(document).ready(function() {
 //    $('.menu-personal-info__subtitle').click(function(event) {
@@ -66,3 +121,13 @@
 //    html: true
 //    // nextStringDelay: 1000 
 // }).go();
+
+
+// const showMenu = document.querySelector('.menu-personal-info__item')
+
+// const openMenu = document.querySelector('.menu-personal-info__title').addEventListener('click', function() {
+//    showMenu.classList.toggle('active')
+//    document.querySelector('.menu-personal-info__title').classList.toggle('active')
+
+
+// })
