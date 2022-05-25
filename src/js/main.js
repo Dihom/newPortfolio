@@ -2,11 +2,17 @@
 
 // Слайдер в блоке меню about-me
 
-
 $(document).ready(function() {
    $('.menu-personal-info__title').click(function() {
       $(this).toggleClass('active')
       $('.menu-personal-info__item').slideToggle(300)
+   })
+})
+
+$(document).ready(function() {
+   $('.menu-contacts__title').click(function() {
+      $(this).toggleClass('active')
+      $('.about-menu-contacts').slideToggle(300)
    })
 })
 
@@ -60,37 +66,23 @@ $(document).ready(function() {
    })
 })
 
-/** ======= Смена цвета при активной ссылке ==========**/
 
+/**=========== Ajax запрос для активных ссылок */
 
-// $(document).ready(function() {
-//    $('.menu-personal-info__subtitle').click(function(event) {
-//       $(this).toggleClass('active').next('.menu-personal-info__text').slideToggle(300)
-//    })
-// })
+$(function() {
 
+   var pathname_url = window.location.pathname;
+   var href_url = window.location.href;
 
-// // Добавляет-удаляет белый цвет текста папок
-// $(document).ready(function() {
-//    $('.menu-personal-info__subtitle').click(function(event) {
-//       $(this).toggleClass('white-text')
-//    })
-// })
+   $(".nav__list").each(function () {
+      var link = $(this).find("a").attr("href");
+      if(pathname_url == link || href_url == link) {
+         $(this).addClass("header-active");
+      }
+   });
+});
 
-// // Добавляет белый цвет тексту
-// $(document).ready(function() {
-//    $('.menu-personal-info__text').click(function(event) {
-//       $(this).addClass('white-text')
-//    })
-// })
-
-// // Удаляет белый цвет у текста
-// $(document).ready(function() {
-//    $('.menu-personal-info__subtitle').click(function(event) {
-//       $('.menu-personal-info__text').removeClass('white-text')
-//    })
-// })
-
+/**===== Текст в виде печатной машинки */
 
 // document.addEventListener("DOMContentLoaded", function () {
 //    new TypeIt("#element", {
@@ -121,13 +113,3 @@ $(document).ready(function() {
 //    html: true
 //    // nextStringDelay: 1000 
 // }).go();
-
-
-// const showMenu = document.querySelector('.menu-personal-info__item')
-
-// const openMenu = document.querySelector('.menu-personal-info__title').addEventListener('click', function() {
-//    showMenu.classList.toggle('active')
-//    document.querySelector('.menu-personal-info__title').classList.toggle('active')
-
-
-// })
