@@ -575,7 +575,7 @@
 
 .about-snippet-details {
    margin-bottom: 50px;
-   display: flex;
+   display: block;
    align-items: center;
    justify-content: space-between;
    border-top: 1px solid #1e2d3d;
@@ -603,6 +603,10 @@
          fill: #FFFFFF;
          transition: fill 0.1s ease-in-out;
       }
+}
+
+.details-one {
+   display: none;
 }
 
 .snippet-two {

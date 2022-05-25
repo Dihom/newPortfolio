@@ -40,7 +40,7 @@ $(document).ready(function() {
    })
 })
 
-/** ======= Смена цвета при активной ссылке ==========**/
+/** ======= Смена цвета подменю при активной ссылке ==========**/
 
 $(document).ready(function() {
    $('.bio').click(function() {
@@ -66,21 +66,45 @@ $(document).ready(function() {
    })
 })
 
+/**================= Появление скрытие блоков details */
+
+$(document).ready(function() {
+   $('.text-details').click(function() {
+      $('.details-one').slideToggle(300)
+   })
+})
 
 /**=========== Ajax запрос для активных ссылок */
 
+// $.ajax({
+//    url: "index.html",
+//    context: document.body
+// }).done(function() {
+//    $('.nav__link--one').addClass( "header-active" )
+//    $('.nav__link--two').removeClass( "header-active" )
+//    $('.nav__link--three').removeClass( "header-active" )
+//    $('.nav__link--four').removeClass( "header-active" )
+// });
+
 $(function() {
-
-   var pathname_url = window.location.pathname;
-   var href_url = window.location.href;
-
-   $(".nav__list").each(function () {
-      var link = $(this).find("a").attr("href");
-      if(pathname_url == link || href_url == link) {
-         $(this).addClass("header-active");
+   $('.nav [href]').each(function() {
+      if (this.href == window.location.href) {
+         $(this).addClass('header-active');
       }
    });
 });
+
+$(function() {
+   $('nav [href]').each(function() {
+      if (this.href == window.location.href) {
+         $(this).addClass('header-active');
+      }
+   });
+});
+
+
+
+
 
 /**===== Текст в виде печатной машинки */
 
