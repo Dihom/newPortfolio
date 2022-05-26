@@ -70,14 +70,16 @@
       <section class="about">
          <div class="about-icons">
             <div class="icons-wrapper">
-               <svg class="icons-wrapper__link professional active-icons"><use xlink:href="#professional"></use></svg>
-               <svg class="icons-wrapper__link personal"><use xlink:href="#personal"></use></svg>
+               <svg class="icons-wrapper__link personal active-icons"><use xlink:href="#personal"></use></svg>
+               <svg class="icons-wrapper__link professional"><use xlink:href="#professional"></use></svg>
                <svg class="icons-wrapper__link hobbies"><use xlink:href="#hobbies"></use></svg>
             </div>
          </div>
 
          <div class="about-menu">
-            <div class="menu-wrapper">
+
+               <!-- === Menu Wrapper Personal ================================================================ -->
+            <div class="menu-wrapper-personal">
 
                <div class="menu-personal-info">
                   <div class="menu-personal-info__title">personal-info</div>
@@ -87,12 +89,6 @@
                <div class="menu-personal-info__item">
                   <div class="menu-personal-info__subtitle info-subtitle-bio">bio</div>
                   <div class="menu-personal-info__text bio">aboutMe</div>
-
-                  <div class="menu-personal-info__subtitle info-subtitle-interests">interests</div>
-                  <div class="menu-personal-info__text interests">myHobbies</div>
-
-                  <div class="menu-personal-info__subtitle info-subtitle-education">education</div>
-                  <div class="menu-personal-info__text education">myEducation</div>
                </div>
 
                   <!-- === Menu Contacts === -->
@@ -102,14 +98,58 @@
                   <a href="tel:89279345557" class="menu-contacts__phone about-menu-contacts">+7(927)9345557</a>
                </div>
                
-            </div><!-- === Menu Wrapper === -->
-         </div><!-- === About Menu === -->
+            </div><!-- === Menu Wrapper Personal =================================================================== -->
 
-         <div class="about-info"><!-- === About Info === -->
+
+
+               <!-- === Menu Wrapper Professional ================================================================== -->
+            <div class="menu-wrapper-professional">
+
+               <div class="menu-personal-info">
+                  <div class="menu-professional-info__title">professional-info</div>
+               </div>
+
+                  <!-- === Menu Personal-info__item === -->
+               <div class="menu-professional-info__item">
+
+                  <div class="menu-personal-info__subtitle info-subtitle-interests">interests</div>
+                  <div class="menu-personal-info__text interests">myHobbies</div>
+
+                  <div class="menu-personal-info__subtitle info-subtitle-education">education</div>
+                  <div class="menu-personal-info__text education">myEducation</div>
+               </div>
+               
+            </div><!-- === Menu Wrapper Professional =============================================================== -->
+
+
+
+               <!-- === Menu Wrapper Hobbies ========================================================================= -->
+               <div class="menu-wrapper-professional">
+
+                  <div class="menu-personal-info">
+                     <div class="menu-hobbies-info__title">hobbies-info</div>
+                  </div>
+   
+                     <!-- === Menu Personal-info__item === -->
+                  <div class="menu-professional-info__item">
+   
+                     <div class="menu-personal-info__subtitle info-subtitle-interests">interests</div>
+                     <div class="menu-personal-info__text interests">myHobbies</div>
+   
+                     <div class="menu-personal-info__subtitle info-subtitle-education">education</div>
+                     <div class="menu-personal-info__text education">myEducation</div>
+                  </div>
+                  
+               </div><!-- === Menu Wrapper Hobbies ================================================================== -->
+
+         </div><!-- === About Menu ================================================================================== -->
+
+
+         <div class="about-info"><!-- === About Info =============================================================== -->
             <div class="info-wrapper">
 
                <div class="about-info-active">
-                  <div class="about-info-active__title">personal-info</div>
+                  <div class="about-info-active__title">_personal-info</div>
                   <svg class="about-info-active__close"><use xlink:href="#close-icon"></use></svg>
                </div>
 
@@ -137,8 +177,11 @@
                </div><!-- === About Info Item === -->
 
             </div><!-- === Info Wrapper === -->
-         </div><!-- === About Info === -->
+         </div><!-- === About Info ======================================================================================== -->
 
+
+
+            <!-- === About Snippet ===================================================================================== -->
          <div class="about-snippet">
             <div class="snippet-wrapper">
 
@@ -155,8 +198,8 @@
                         </div>
                      </div>
                      <div class="about-snippet-user-details">
-                        <div class="about-snippet-user-details__text text-details">details</div>
-                        <div class="about-snippet-user-details__text">0 stars</div>
+                        <div class="about-snippet-user-details__text details-top">details</div>
+                        <div class="about-snippet-user-details__text snippet-stars-top">0 stars</div>
                      </div>
                   </div><!-- === About Snippet User === -->
 
@@ -177,7 +220,7 @@
                      <!-- <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg> -->
                   </div>
 
-                  <div class="about-snippet-user">
+                  <div class="about-snippet-user two-block">
                      <div class="about-snippet-username">
                         <img src="img/about-me/snippet/user-image.png" alt="img" class="about-snippet-user__photo">
                         <div class="div">
@@ -186,8 +229,8 @@
                         </div>
                      </div>
                      <div class="about-snippet-user-details">
-                        <div class="about-snippet-user-details__text text-details">details</div>
-                        <div class="about-snippet-user-details__text">0 stars</div>
+                        <div class="about-snippet-user-details__text details-bottom">details</div>
+                        <div class="about-snippet-user-details__text snippet-stars-bottom">0 stars</div>
                      </div>
                   </div><!-- === About Snippet User === -->
 
@@ -201,16 +244,16 @@
                      </ul>
                   </div>
 
-                  <div class="about-snippet-details snippet-two">
-                     <p class="about-snippet-details__text details-two">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
-                     <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
-                  </div>
+                  <div class="about-snippet-details details-two">
+                     <p class="about-snippet-details__text">My work here was 5 months ago. It was for the project called “...”. Some other text can be placed here.</p>
+                     <!-- <svg class="about-snippet-details__close"><use xlink:href="#close-icon"></use></svg>
+                  </div> -->
 
                </div><!-- === About Snippet ITEM === -->
             </div><!-- === Snippet Wrapper === -->
-         </div><!-- === About Snippet === -->
+         </div><!-- === About Snippet ============================================================================ -->
 
-      </section>
+      </div></section>
 
 
    </main>

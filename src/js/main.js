@@ -1,7 +1,6 @@
 'use strict'
 
-// Слайдер в блоке меню about-me
-
+// ======= Слайдер в блоке меню about-me personal-info START =======//
 $(document).ready(function() {
    $('.menu-personal-info__title').click(function() {
       $(this).toggleClass('active')
@@ -23,7 +22,11 @@ $(document).ready(function() {
       $('.bio').slideToggle(300)
    })
 })
+// ======= Слайдер в блоке меню about-me personal-info END =======//
 
+
+
+// ======= Слайдер в блоке меню about-me hobbies-info START =======//
 $(document).ready(function() {
    $('.info-subtitle-interests').click(function() {
       $(this).toggleClass('active')
@@ -31,7 +34,10 @@ $(document).ready(function() {
       $('.interests').slideToggle(300)
    })
 })
+// ======= Слайдер в блоке меню about-me hobbies-info END =======//
 
+
+// ======= Слайдер в блоке меню about-me professional-info START =======//
 $(document).ready(function() {
    $('.info-subtitle-education').click(function() {
       $(this).toggleClass('active')
@@ -39,9 +45,11 @@ $(document).ready(function() {
       $('.education').slideToggle(300)
    })
 })
+// ======= Слайдер в блоке меню about-me professional-info END =======//
 
-/** ======= Смена цвета подменю при активной ссылке ==========**/
 
+
+/** ======= Смена цвета подменю при активной ссылке START ==========**/
 $(document).ready(function() {
    $('.bio').click(function() {
       $(this).addClass('active-text-color')
@@ -65,27 +73,29 @@ $(document).ready(function() {
       $('.education').removeClass('active-text-color')
    })
 })
+/** ======= Смена цвета подменю при активной ссылке END ==========**/
 
-/**================= Появление скрытие блоков details */
 
+
+/**================= Появление скрытие блоков details START ========== */
 $(document).ready(function() {
-   $('.text-details').click(function() {
+   $('.details-top').click(function() {
       $('.details-one').slideToggle(300)
+      $('.details-two').slideUp(300)
    })
 })
 
-/**=========== Ajax запрос для активных ссылок */
+$(document).ready(function() {
+   $('.details-bottom').click(function() {
+      $('.details-two').slideToggle(300)
+      $('.details-one').slideUp(300)
+   })
+})
+/**================= Появление скрытие блоков details END ========== */
 
-// $.ajax({
-//    url: "index.html",
-//    context: document.body
-// }).done(function() {
-//    $('.nav__link--one').addClass( "header-active" )
-//    $('.nav__link--two').removeClass( "header-active" )
-//    $('.nav__link--three').removeClass( "header-active" )
-//    $('.nav__link--four').removeClass( "header-active" )
-// });
 
+
+/**=========== Ajax запрос для активных ссылок START ============ */
 $(function() {
    $('.nav [href]').each(function() {
       if (this.href == window.location.href) {
@@ -101,7 +111,7 @@ $(function() {
       }
    });
 });
-
+/**=========== Ajax запрос для активных ссылок END ============ */
 
 
 

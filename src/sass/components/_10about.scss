@@ -1,8 +1,28 @@
 
-// ===== Section About Start ===== //
+/* Классы для JavaScript===========================================================*/
 
-.about-me-wrapper {
+.active {
+   display: block;
 }
+
+.white-text {
+   color: #FFFFFF;
+   transition: color 0.2s ease-in-out;
+}
+
+.active-text-color {
+   color: #E99287;
+   transition: color 0.2s ease-in-out;
+}
+
+/* ======================================================================================*/
+
+
+
+// ===== Section About Start =============================================================== //
+
+// .about-me-wrapper {
+// }
 
 .about {
    position: absolute;
@@ -13,6 +33,9 @@
    display: flex;
    // justify-content: space-between;
 }
+
+
+/*====== ABOUT ICONS ==================================================================*/
 
 .about-icons {
    border-right: 1px solid #1e2d3d;
@@ -47,16 +70,25 @@
 .active-icons {
    opacity: 1;
 }
+
+
+
+
+/*====== ABOUT MENU ===========================================================================*/
+
 .about-menu {
    width: 243px;
    // width: 100%;
    height: 100%;
+   border-right: 1px solid #1e2d3d;
+
 }
-.menu-wrapper {
+.menu-wrapper-personal {
+   // display: none;
    min-width: 243px;
    width: 100%;
    height: 100%;
-   border-right: 1px solid #1e2d3d;
+   // border-right: 1px solid #1e2d3d;
 }
 
 .menu-personal-info {
@@ -94,7 +126,7 @@
 
       &__item {
          padding-top: 21px;
-         padding-bottom: 30px;
+         padding-bottom: 21px;
          overflow: hidden;
          display: none;
          border-bottom: 1px solid #1e2d3d;
@@ -301,10 +333,12 @@
 
 
 
+/*===== ABOUT INFO ==========================================================================*/
+
 .about-info {
    position: relative;
    min-width: 700px;
-   width: 100%;
+   // width: 100%;
    height: 100%;
    border-right: 1px solid #1e2d3d;
    overflow: hidden;
@@ -404,6 +438,10 @@
 		}
 }
 
+
+
+/*====== ABOUT SNIPPET ====================================================================*/
+
 .about-snippet {
    position: relative;
    margin-top: 45px;
@@ -416,7 +454,7 @@
 		// .about-snippet__title
 
 		&__title {
-         margin-bottom: 45px;
+         margin-bottom: 65px;
          font-weight: 450;
          font-size: 18px;
          line-height: 24px;
@@ -455,6 +493,10 @@
    position: relative;
 }
 
+.two-block {
+   margin-top: 55px;
+}
+
 .about-snippet-user {
    margin-bottom: 12px;
    display: flex;
@@ -465,8 +507,8 @@
 
 		&__photo {
          margin-right: 10.5px;
-         width: 40px;
-         height: 40px;
+         width: 36px;
+         height: 36px;
          border-radius: 50%;
          object-fit:cover;
          object-position: center;
@@ -517,14 +559,37 @@
 		}
 }
 
-.text-details {
+.details-top, .details-bottom {
+   position: relative;
    transition: color 0.2s ease-in-out;
 }
 
-.text-details:hover {
+.details-top:hover, .details-bottom:hover {
    color: #FFFFFF;
    cursor: pointer;
    transition: color 0.2s ease-in-out;
+}
+
+.details-top::before, .details-bottom::before {
+   content: url('/img/about-me/snippet/comments-icon.svg');
+   position: absolute;
+   width: 18px;
+   height: 18px;
+   left: -23px;
+   top: -2px;
+}
+
+.snippet-stars-top, .snippet-stars-bottom {
+   position: relative;
+}
+
+.snippet-stars-top::before, .snippet-stars-bottom::before {
+   content: url('/img/about-me/snippet/star-nofill.svg');
+   position: absolute;
+   width: 18px;
+   height: 18px;
+   left: -23px;
+   top: -2px;
 }
 
 .about-snippet-block {
@@ -549,6 +614,7 @@
 		}
 }
 
+
 /*===== Function element color =====*/
 .one-color {
    color: #E99287;
@@ -569,7 +635,6 @@
 .five-color {
    color: #FEA55F;
 }
-
 /*===== Function element color =====*/
 
 
@@ -609,24 +674,7 @@
    display: none;
 }
 
-.snippet-two {
+.details-two {
    display: none;
 }
 
-/* Классы для JavaScript===========================================================*/
-
-.active {
-   display: block;
-}
-
-.white-text {
-   color: #FFFFFF;
-   transition: color 0.2s ease-in-out;
-}
-
-.active-text-color {
-   color: #E99287;
-   transition: color 0.2s ease-in-out;
-}
-
-/* ===========================================================*/
