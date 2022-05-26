@@ -1,23 +1,4 @@
 
-/* Классы для JavaScript===========================================================*/
-
-.active {
-   display: block;
-}
-
-.white-text {
-   color: #FFFFFF;
-   transition: color 0.2s ease-in-out;
-}
-
-.active-text-color {
-   color: #E99287;
-   transition: color 0.2s ease-in-out;
-}
-
-/* ======================================================================================*/
-
-
 
 // ===== Section About Start =============================================================== //
 
@@ -54,10 +35,14 @@
 
 		&__link {
          cursor: pointer;
+         transition: opacity 0.3s ease-in-out;
+
 		}
 
       &__link:hover {
          opacity: 1;
+         transition: opacity 0.3s ease-in-out;
+   
 		}
 }
 .professional {
@@ -69,8 +54,8 @@
 
 .active-icons {
    opacity: 1;
+   transition: opacity 0.3s ease-in-out;
 }
-
 
 
 
@@ -83,6 +68,9 @@
    border-right: 1px solid #1e2d3d;
 
 }
+
+/*====== ABOUT MENU Personal ===========================================================================*/
+
 .menu-wrapper-personal {
    // display: none;
    min-width: 243px;
@@ -130,7 +118,6 @@
          overflow: hidden;
          display: none;
          border-bottom: 1px solid #1e2d3d;
-
       }
 
       // .menu-personal-info__subtitle
@@ -150,7 +137,6 @@
          transition: color 0.2s ease-in-out;
          }
          
-
       // .menu-personal-info__text
 
       &__text {
@@ -165,11 +151,6 @@
          cursor: pointer;
          transition: color 0.2s ease-in-out;
       }
-
-      // &__text:hover {
-      //    color: #FFFFFF;
-      //    transition: color 0.2s ease-in-out;
-      // }
 
       &__text:before {
          content: url('/img/about-me/menu/info-folder.svg');
@@ -198,46 +179,6 @@
 
 .info-subtitle-bio::before {
    content: url('/img/about-me/menu/pink-folder.svg');
-   @extend %about-personal-folder;
-}
-
-.info-subtitle-interests {
-   @extend %about-personal-property;
-}
-
-.info-subtitle-interests::after {
-   content: url('/img/about-me/menu/arrow.svg');
-   @extend %about-personal-arrow;
-   transition: transform 0.3s ease-in-out;
-}
-
-.info-subtitle-interests.active::after {
-   transform: rotate(90deg);
-   transition: transform 0.3s ease-in-out;
-}
-
-.info-subtitle-interests::before {
-   content: url('/img/about-me/menu/green-folder.svg');
-   @extend %about-personal-folder;
-}
-
-.info-subtitle-education {
-   @extend %about-personal-property;
-}
-
-.info-subtitle-education::after {
-   content: url('/img/about-me/menu/arrow.svg');
-   @extend %about-personal-arrow;
-   transition: transform 0.3s ease-in-out;
-}
-
-.info-subtitle-education.active::after {
-   transform: rotate(90deg);
-   transition: transform 0.3s ease-in-out;
-}
-
-.info-subtitle-education::before {
-   content: url('/img/about-me/menu/blue-folder.svg');
    @extend %about-personal-folder;
 }
 
@@ -330,6 +271,191 @@
    display: none;
 }
 
+/*====== ABOUT MENU Personal ===========================================================================*/
+
+
+/*====== ABOUT MENU Professional ===========================================================================*/
+
+.menu-wrapper-professional {
+   display: none;
+   min-width: 243px;
+   width: 100%;
+   height: 100%;
+   // border-right: 1px solid #1e2d3d;
+}
+
+.menu-professional-info {
+   border-bottom: 1px solid #1e2d3d;
+
+   // .menu-professional-info__title
+
+      &__title {
+         position: relative;
+         padding-top: 12px;
+         padding-left: 34px;
+         padding-bottom: 12px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 21px;
+         color: #FFFFFF;
+         cursor: pointer;
+      }
+
+      &__title:after {
+         content: url('/img/about-me/menu/bold-arrow.svg');
+         position: absolute;
+         left: 14px;
+         top: 13px;
+         transform: rotate(-90deg);
+         transition: transform 0.3s ease-in-out;
+      }
+
+      &__title.active:after {
+         transform: rotate(0deg);
+         transition: transform 0.3s ease-in-out;
+      }
+
+      // .menu-professional-info__item
+
+      &__item {
+         padding-top: 21px;
+         padding-bottom: 21px;
+         overflow: hidden;
+         display: none;
+         border-bottom: 1px solid #1e2d3d;
+      }
+
+      // .menu-professional-info__subtitle
+
+      &__subtitle {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 21px;
+         color: #607B96;
+         // display: none;
+         cursor: pointer;
+         transition: color 0.2s ease-in-out;
+      }
+
+      &__subtitle:hover {
+         color: #FFFFFF;
+         transition: color 0.2s ease-in-out;
+         }
+         
+      // .menu-professional-info__text
+
+      &__text {
+         position: relative;
+         padding-left: 61px;
+         margin-bottom: 15px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 21px;
+         color: #607B96;
+         display: none;
+         cursor: pointer;
+         transition: color 0.2s ease-in-out;
+      }
+
+      &__text:before {
+         content: url('/img/about-me/menu/info-folder.svg');
+         position: absolute;
+         left: 37px;
+         top: 2.5px;
+         width: 7px;
+         height: 12px;
+      }
+}
+
+
+// info-subtitle-education ===============================
+
+.info-subtitle-education {
+   @extend %about-personal-property;
+}
+
+.info-subtitle-education::after {
+   content: url('/img/about-me/menu/arrow.svg');
+   @extend %about-personal-arrow;
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-education.active::after {
+   transform: rotate(90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-education::before {
+   content: url('/img/about-me/menu/blue-folder.svg');
+   @extend %about-personal-folder;
+}
+
+
+// info-subtitle-career ====================================
+
+.info-subtitle-career {
+   @extend %about-personal-property;
+}
+
+.info-subtitle-career::after {
+   content: url('/img/about-me/menu/arrow.svg');
+   @extend %about-personal-arrow;
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-career.active::after {
+   transform: rotate(90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-career::before {
+   content: url('/img/about-me/menu/purple-folder.svg');
+   @extend %about-personal-folder;
+}
+
+/*====== ABOUT MENU Professional ===========================================================================*/
+
+
+
+.info-subtitle-interests {
+   @extend %about-personal-property;
+}
+
+.info-subtitle-interests::after {
+   content: url('/img/about-me/menu/arrow.svg');
+   @extend %about-personal-arrow;
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-interests.active::after {
+   transform: rotate(90deg);
+   transition: transform 0.3s ease-in-out;
+}
+
+.info-subtitle-interests::before {
+   content: url('/img/about-me/menu/green-folder.svg');
+   @extend %about-personal-folder;
+}
+
+
+/* Классы для JavaScript About Menu===========================================================*/
+
+.active {
+   display: block;
+}
+
+.white-text {
+   color: #FFFFFF;
+   transition: color 0.2s ease-in-out;
+}
+
+.active-text-color {
+   color: #E99287;
+   transition: color 0.2s ease-in-out;
+}
+
+/* ======================================================================================*/
+
 
 
 
@@ -342,7 +468,6 @@
    height: 100%;
    border-right: 1px solid #1e2d3d;
    overflow: hidden;
-
 }
 
 .about-info::after {
@@ -355,6 +480,17 @@
    background: #1e2d3d;
 }
 
+.about-info::before {
+   content: '';
+   position: absolute;
+   top: 45px;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 1px;
+   background: #1e2d3d;
+}
+
 .info-wrapper {
    // width: 700px;
    // display: none;
@@ -364,8 +500,8 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 220px;
-   padding: 12px 14px;
+   width: 274px;
+   padding: 12px 15px;
    border-right: 1px solid #1e2d3d;
 
 		// .about-info-active__title
@@ -395,10 +531,16 @@
          transition: fill 0.1s ease-in-out;
       }
 }
-.about-info-item {
-   height: 100%;
-   border-top: 1px solid #1e2d3d;
 
+.personal-text-active {
+   display: none;
+}
+
+.about-info-item {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   // border-top: 1px solid #1e2d3d;
 		// .about-info-item__text
 
 		&__text {
@@ -438,6 +580,103 @@
 		}
 }
 
+.personal-info {
+   display: none;
+}
+
+
+// .about-info-btn =========================================================
+
+.about-info-btn {
+   position: absolute;
+   bottom: 10%;
+   right: 50%;
+   left: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+// .about-info-btn__link
+
+.about-info-btn__link {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   white-space: nowrap;
+   padding: 10px 14px;
+   color: #607B96;
+   background-color: #607B96;
+   font-size: 16px;
+   font-weight: 500;
+   letter-spacing: 0;
+   transition: 0.5s;
+}
+
+.about-info-btn__link:hover {
+   background: #FEA55F;
+   color: #FEA55F;
+   letter-spacing: 0.09em;
+   box-shadow: 1px 1px 15px #FEA55F;
+}
+
+.about-info-btn__link:active {
+   transform: translateY(2px);
+   transition: 0.2s;
+}
+
+.about-info-btn__link::before {
+   content: '';
+   position: absolute;
+   inset: 2px;
+   background: #011627;
+}
+
+.about-info-btn__link span {
+   position: relative;
+   z-index: 1;
+}
+
+.about-info-btn__link i {
+   position: absolute;
+   inset: 0;
+   display: block;
+}
+
+.about-info-btn__link i::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 80%;
+   width: 10px;
+   height: 4px;
+   background: #011627;
+   transform: translateX(-50%) skewX(325deg);
+   transition: 0.5s;
+}
+
+.about-info-btn__link:hover i::before {
+   width: 15px;
+   left: 20%;
+}
+
+.about-info-btn__link i::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 20%;
+   width: 10px;
+   height: 4px;
+   background: #011627;
+   transform: translateX(-50%) skewX(325deg);
+   transition: 0.5s;
+}
+
+.about-info-btn__link:hover i::after {
+   width: 15px;
+   left: 80%;
+}
 
 
 /*====== ABOUT SNIPPET ====================================================================*/
@@ -498,7 +737,7 @@
 }
 
 .about-snippet-user {
-   margin-bottom: 12px;
+   margin-bottom: 15px;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -507,8 +746,8 @@
 
 		&__photo {
          margin-right: 10.5px;
-         width: 36px;
-         height: 36px;
+         width: 39px;
+         height: 39px;
          border-radius: 50%;
          object-fit:cover;
          object-position: center;
@@ -595,6 +834,7 @@
 .about-snippet-block {
    margin-bottom: 19px;
 
+
 		// .about-snippet-block__code
 
 		&__code {
@@ -602,6 +842,7 @@
          background: #011221;
          border: 1px solid #1E2D3D;
          border-radius: 15px;
+         box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
 		}
 
 		// .about-snippet-block__text
@@ -677,4 +918,5 @@
 .details-two {
    display: none;
 }
+
 
