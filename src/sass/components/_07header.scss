@@ -75,10 +75,6 @@
          transition: color 0.2s ease-in-out;
       }
 
-      // &__link:focus {
-      //    color: #FEA55F;
-      // }
-
       &__link::after {
          content: '';
          position: absolute;
@@ -107,15 +103,46 @@
 .header-right {
    display: flex;
    align-items: center;
+   height: 100%;
 }
+
+/* ========== CLOCK START ===========*/
+
+.header-clock {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   position: relative;
+   height: 58px;
+   border-left: 1px solid #1E2D3D;
+   cursor: default;
+}
+
+.time {
+   padding-left: 32px;
+   padding-right: 32px;
+   font-weight: 450;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FEA55F;
+   white-space: nowrap;
+   text-shadow: 1px 1px 20px #FEA55F;
+   opacity: 0.9;
+   // -webkit-background-clip: text;
+   // -webkit-text-fill-color: transparent;
+}
+
+/* ========== CLOCK END ===========*/
+
 
 .header-contact {
    position: relative;
    height: 58px;
    display: flex;
    align-items: center;
-   padding-right: 23px;
-   padding-left: 24px;
+   padding-right: 32px;
+   padding-left: 32px;
    @extend %header-font;
    border-left: 1px solid #1E2D3D;
    transition: color 0.2s ease-in-out;

@@ -595,7 +595,7 @@
    content: '';
    position: absolute;
    top: 0;
-   left: 273px;
+   left: 263px;
    width: 1px;
    height: 45px;
    background: #1e2d3d;
@@ -619,23 +619,6 @@
          line-height: 21px;
          color: #607B96;
 		}
-
-
-		// .about-info-active__close
-
-      // &__close {
-      //    fill: #607B96;
-      //    width: 18px;
-      //    height: 18px;
-      //    cursor: default;
-      //    opacity: 0.8;
-      //    transition: fill 0.1s ease-in-out;
-      // }
-      
-      // &__close:hover {
-      //    fill: #FFFFFF;
-      //    transition: fill 0.1s ease-in-out;
-      // }
 }
 
 .personal-text-active {
@@ -654,6 +637,7 @@
          padding-left: 38px;
          padding-right: 38px;
          padding-top: 18px;
+         margin-bottom: 100px;
          height: 100%;
 		}
 
@@ -698,10 +682,10 @@
 // .about-info-btn =========================================================
 
 .about-info-btn {
-   position: absolute;
-   bottom: 10%;
-   right: 50%;
-   left: 50%;
+   // position: absolute;
+   // bottom: 10%;
+   // right: 50%;
+   // left: 50%;
    display: flex;
    align-items: center;
    justify-content: center;

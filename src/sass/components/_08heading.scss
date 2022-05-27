@@ -15,12 +15,12 @@
 .game-shadow {
    position: absolute;
    display: block;
-   right: -180px;
+   right: -170px;
    top: -116px;
    width: 770px;
    height: 732px;
 	z-index: 0;
-	animation: rotate 25s linear infinite;
+	animation: rotate 40s linear infinite;
 }
 
 // @keyframes rotate {

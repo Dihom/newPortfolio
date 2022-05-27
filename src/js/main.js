@@ -1,7 +1,39 @@
 'use strict'
 
-// ======= Слайдер в блоке меню about-me ОТКРЫТИЕ ЗАКРЫТИЕ блоков START =======//
 
+// ======= CLOCK in header START =======//
+setInterval(() => {
+   const time = document.querySelector('#time')
+
+   let date = new Date()
+   let hours = date.getHours()
+   let minutes = date.getMinutes()
+   let seconds = date.getSeconds()
+
+   let dayNight = 'AM'
+
+   if (hours > 12) {
+      dayNight = 'PM'
+      hours = hours - 12
+   }
+   if (hours < 10) {
+      hours = '0' + hours
+   }
+   if (minutes < 10) {
+      minutes = '0' + minutes
+   }
+   if (seconds < 10) {
+      seconds = '0' + seconds
+   }
+   
+   time.textContent = hours + ':' + minutes + ':' + seconds + ' ' + dayNight
+})
+// ======= CLOCK in header END =======//
+
+
+
+
+// ======= Слайдер в блоке меню about-me ОТКРЫТИЕ ЗАКРЫТИЕ блоков START =======//
 $(document).ready(function() {
    $('.personal').click(function() {
       $(this).addClass('active-icons')
@@ -13,6 +45,15 @@ $(document).ready(function() {
       $('.menu-wrapper-professional').slideUp(300)
       $('.menu-wrapper-hobbies').slideUp(300)
       $('.menu-wrapper-personal').slideDown(300)
+      $('.greeting-text-active').slideDown(300)
+      $('.greeting-info').slideDown(300)
+      $('.personal-text-active').slideUp(300)
+      $('.personal-info').slideUp(300)
+      $('.bio').removeClass('active-text-color')
+      $('.professional-text-active').slideUp(300)
+      $('.professional-info').slideUp(300)
+      $('.hobbies-text-active').slideUp(300)
+      $('.hobbies-info').slideUp(300)
    })
 })
 
@@ -25,9 +66,15 @@ $(document).ready(function() {
       $('.interests').removeClass('active-text-color')
       $('.personal-text-active').slideUp(100)
       $('.personal-info').slideUp(300)
+      $('.greeting-text-active').slideUp(300)
+      $('.greeting-info').slideUp(300)
+      $('.professional-text-active').slideDown(300)
+      $('.professional-info').slideDown(300)
       $('.menu-wrapper-personal').slideUp(300)
       $('.menu-wrapper-hobbies').slideUp(300)
       $('.menu-wrapper-professional').slideDown(300)
+      $('.hobbies-text-active').slideUp(300)
+      $('.hobbies-info').slideUp(300)
    })
 })
 
@@ -44,9 +91,14 @@ $(document).ready(function() {
       $('.menu-wrapper-personal').slideUp(300)
       $('.menu-wrapper-professional').slideUp(300)
       $('.menu-wrapper-hobbies').slideDown(300)
+      $('.greeting-text-active').slideUp(300)
+      $('.greeting-info').slideUp(300)
+      $('.professional-text-active').slideUp(300)
+      $('.professional-info').slideUp(300)
+      $('.hobbies-text-active').slideDown(300)
+      $('.hobbies-info').slideDown(300)
    })
 })
-
 // ======= Слайдер в блоке меню about-me ОТКРЫТИЕ ЗАКРЫТИЕ блоков END =======//
 
 
@@ -151,6 +203,8 @@ $(document).ready(function() {
       $(this).addClass('active-text-color')
       $('.personal-text-active').slideDown(300)
       $('.personal-info').slideDown(300)
+      $('.greeting-text-active').slideUp(300)
+      $('.greeting-info').slideUp(300)
       // $('.interests').removeClass('active-text-color')
       // $('.education').removeClass('active-text-color')
    })
