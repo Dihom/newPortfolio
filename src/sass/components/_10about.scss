@@ -69,7 +69,7 @@
 
 }
 
-/*====== ABOUT MENU Personal ===========================================================================*/
+/*====== ABOUT MENU Personal START===========================================================================*/
 
 .menu-wrapper-personal {
    // display: none;
@@ -116,7 +116,7 @@
          padding-top: 21px;
          padding-bottom: 21px;
          overflow: hidden;
-         display: none;
+         // display: none;
          border-bottom: 1px solid #1e2d3d;
       }
 
@@ -268,13 +268,13 @@
 }
 
 .about-menu-contacts {
-   display: none;
+   // display: none;
 }
 
-/*====== ABOUT MENU Personal ===========================================================================*/
+/*====== ABOUT MENU Personal END ===========================================================================*/
 
 
-/*====== ABOUT MENU Professional ===========================================================================*/
+/*====== ABOUT MENU Professional START ===========================================================================*/
 
 .menu-wrapper-professional {
    display: none;
@@ -321,7 +321,7 @@
          padding-top: 21px;
          padding-bottom: 21px;
          overflow: hidden;
-         display: none;
+         // display: none;
          border-bottom: 1px solid #1e2d3d;
       }
 
@@ -413,10 +413,100 @@
    @extend %about-personal-folder;
 }
 
-/*====== ABOUT MENU Professional ===========================================================================*/
+/*====== ABOUT MENU Professional END===========================================================================*/
 
 
 
+/*====== ABOUT MENU Hobbies START ===========================================================================*/
+
+.menu-wrapper-hobbies {
+   display: none;
+   min-width: 243px;
+   width: 100%;
+   height: 100%;
+   // border-right: 1px solid #1e2d3d;
+}
+.menu-hobbies-info {
+   border-bottom: 1px solid #1e2d3d;
+		// .menu-hobbies-info__title
+
+		&__title {
+         position: relative;
+         padding-top: 12px;
+         padding-left: 34px;
+         padding-bottom: 12px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 21px;
+         color: #FFFFFF;
+         cursor: pointer;
+		}
+
+      &__title::after {
+         content: url('/img/about-me/menu/bold-arrow.svg');
+         position: absolute;
+         left: 14px;
+         top: 13px;
+         transform: rotate(-90deg);
+         transition: transform 0.3s ease-in-out;
+      }
+
+      &__title.active:after {
+         transform: rotate(0deg);
+         transition: transform 0.3s ease-in-out;
+      }
+
+		// .menu-hobbies-info__item
+
+		&__item {
+         padding-top: 21px;
+         padding-bottom: 21px;
+         overflow: hidden;
+         // display: none;
+         border-bottom: 1px solid #1e2d3d;
+		}
+
+		// .menu-hobbies-info__subtitle
+
+		&__subtitle {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 21px;
+         color: #607B96;
+         // display: none;
+         cursor: pointer;
+         transition: color 0.2s ease-in-out;
+		}
+
+      &__subtitle:hover {
+         color: #FFFFFF;
+         transition: color 0.2s ease-in-out;
+         }
+
+		// .menu-hobbies-info__text
+
+		&__text {
+         position: relative;
+         padding-left: 61px;
+         margin-bottom: 15px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 21px;
+         color: #607B96;
+         display: none;
+         cursor: pointer;
+         transition: color 0.2s ease-in-out;
+      }
+
+      &__text:before {
+         content: url('/img/about-me/menu/info-folder.svg');
+         position: absolute;
+         left: 37px;
+         top: 2.5px;
+         width: 7px;
+         height: 12px;
+      }
+}
 .info-subtitle-interests {
    @extend %about-personal-property;
 }
@@ -436,6 +526,12 @@
    content: url('/img/about-me/menu/green-folder.svg');
    @extend %about-personal-folder;
 }
+.interests {
+}
+
+
+/*====== ABOUT MENU Hobbies END ===========================================================================*/
+
 
 
 /* Классы для JavaScript About Menu===========================================================*/
@@ -492,17 +588,26 @@
 }
 
 .info-wrapper {
-   // width: 700px;
-   // display: none;
+   position: relative;
+}
+
+.info-wrapper::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 273px;
+   width: 1px;
+   height: 45px;
+   background: #1e2d3d;
 }
 
 .about-info-active {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 274px;
+   // width: 274px;
    padding: 12px 15px;
-   border-right: 1px solid #1e2d3d;
+   // border-right: 1px solid #1e2d3d;
 
 		// .about-info-active__title
 
@@ -515,21 +620,22 @@
          color: #607B96;
 		}
 
+
 		// .about-info-active__close
 
-      &__close {
-         fill: #607B96;
-         width: 18px;
-         height: 18px;
-         cursor: default;
-         opacity: 0.8;
-         transition: fill 0.1s ease-in-out;
-      }
+      // &__close {
+      //    fill: #607B96;
+      //    width: 18px;
+      //    height: 18px;
+      //    cursor: default;
+      //    opacity: 0.8;
+      //    transition: fill 0.1s ease-in-out;
+      // }
       
-      &__close:hover {
-         fill: #FFFFFF;
-         transition: fill 0.1s ease-in-out;
-      }
+      // &__close:hover {
+      //    fill: #FFFFFF;
+      //    transition: fill 0.1s ease-in-out;
+      // }
 }
 
 .personal-text-active {
@@ -578,6 +684,10 @@
 		&__number {
          padding-right: 40px;
 		}
+}
+
+.two-digit-number {
+   padding-right: 30px;
 }
 
 .personal-info {

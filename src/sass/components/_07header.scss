@@ -104,6 +104,11 @@
       }
 }
 
+.header-right {
+   display: flex;
+   align-items: center;
+}
+
 .header-contact {
    position: relative;
    height: 58px;

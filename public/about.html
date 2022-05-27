@@ -53,13 +53,16 @@
             <div class="header-logo">dmitrii-homyakov</div>
             <nav class="nav">
                   <ul class="nav__list">
-                     <li class="nav__item"><a href="index.html" class="nav__link nav__link--one click">_hello</a></li>
+                     <li class="nav__item"><a href="index.html" class="nav__link nav__link--one click">_home</a></li>
                      <li class="nav__item"><a href="about.html" class="nav__link nav__link--two click">_about-me</a></li>
                      <li class="nav__item"><a href="projects.html" class="nav__link nav__link--three click">_projects</a></li>
                   </ul>
             </nav>
          </div><!--Header Left -->
-         <nav>
+         <nav class="header-right">
+            <div class="header-clock">
+               clock
+            </div>
             <a href="contact-me.html" class="header-contact nav__link--four click">_contact-me</a> 
          </nav>
       </div><!--Header Wrapper -->
@@ -68,6 +71,7 @@
    <main class="main about-me-wrapper">
       
       <section class="about">
+
          <div class="about-icons">
             <div class="icons-wrapper">
                <svg class="icons-wrapper__link personal active-icons"><use xlink:href="#personal"></use></svg>
@@ -82,7 +86,7 @@
             <div class="menu-wrapper-personal">
 
                <div class="menu-personal-info">
-                  <div class="menu-personal-info__title">personal-info</div>
+                  <div class="menu-personal-info__title active">personal-info</div>
                </div>
 
                   <!-- === Menu Personal-info__item === -->
@@ -93,7 +97,7 @@
 
                   <!-- === Menu Contacts === -->
                <div class="menu-contacts">
-                  <div class="menu-contacts__title">contacts</div>
+                  <div class="menu-contacts__title active">contacts</div>
                   <a href="mailto:dev-homyakov@ya.ru" class="menu-contacts__email about-menu-contacts">dev-homyakov@ya.ru</a>
                   <a href="tel:89279345557" class="menu-contacts__phone about-menu-contacts">+7(927)9345557</a>
                </div>
@@ -106,7 +110,7 @@
             <div class="menu-wrapper-professional">
 
                <div class="menu-professional-info">
-                  <div class="menu-professional-info__title">professional-info</div>
+                  <div class="menu-professional-info__title active">professional-info</div>
                </div>
 
                   <!-- === Menu Personal-info__item === -->
@@ -127,7 +131,7 @@
                <div class="menu-wrapper-hobbies">
 
                   <div class="menu-hobbies-info">
-                     <div class="menu-hobbies-info__title">hobbies-info</div>
+                     <div class="menu-hobbies-info__title active">hobbies-info</div>
                   </div>
    
                      <!-- === Menu Personal-info__item === -->
@@ -146,11 +150,12 @@
          <div class="about-info"><!-- === About Info =============================================================== -->
             <div class="info-wrapper">
 
+
+                  <!-- === About Info Item PERSONAL INFO === -->
                <div class="about-info-active personal-text-active">
                   <div class="about-info-active__title">_personal-info</div>
                   <!-- <svg class="about-info-active__close"><use xlink:href="#close-icon"></use></svg> -->
                </div>
-
                   <!-- === About Info Item === -->
                <div class="about-info-item personal-info">
                   <ul class="about-info-item__text about-me-text">
@@ -177,6 +182,35 @@
                   </div>
 
                </div><!-- === About Info Item === -->
+
+               
+                     <!-- === About Info Item PROFESSIONAL INFO  === -->
+
+                  <div class="about-info-active">
+                     <div class="about-info-active__title">_greeting</div>
+                     <!-- <svg class="about-info-active__close"><use xlink:href="#close-icon"></use></svg> -->
+                  </div>
+                  <!-- === About Info Item === -->
+                  <div class="about-info-item">
+                     <ul class="about-info-item__text">
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">1</p>/**</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">2</p>* Hello</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">3</p>* I have 5 years of еxperience in web</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">4</p>* development lorem ipsum dolor sit amet,</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">5</p>* consectetur adipiscing elit, sed do eiusmod</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">6</p>* tempor incididunt ut labore et dolore</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">7</p>* magna aliqua. Ut enim ad minim veniam,</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">8</p>* quis nostrud exercitation ullamco laboris</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number">9</p>* nisi ut aliquip ex ea commodo consequat.</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">10</p>* Duis aute irure dolor in reprehenderit in</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">11</p>*</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">12</p>* Duis aute irure dolor in reprehenderit in</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">13</p>* voluptate velit esse cillum dolore eu fugiat</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">14</p>* nulla pariatur. Excepteur sint occaecat</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">15</p>* officia deserunt mollit anim id est laborum.</li>
+                        <li class="about-info-item__stroke"><p class="about-info-item__number two-digit-number">16</p>*/</li>
+                     </ul>
+                  </div><!-- === About Info Item === -->
 
             </div><!-- === Info Wrapper === -->
          </div><!-- === About Info ======================================================================================== -->
