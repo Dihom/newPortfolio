@@ -612,8 +612,8 @@
    background: #011221;
    border: 1px solid #1E2D3D;
    border-radius: 15px;
-   box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
-   // border-top: 1px solid #1e2d3d;
+   transition: box-shadow 0.2s linear;
+
 		// .about-info-item__text
 
 		&__text {
@@ -650,6 +650,11 @@
 		&__number {
          padding-right: 40px;
 		}
+}
+
+.about-info-item:hover {
+   box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
+   transition: box-shadow 0.2s linear;
 }
 
 .two-digit-number {
@@ -911,6 +916,8 @@
 
 .about-snippet-block {
    margin-bottom: 19px;
+   border-radius: 15px;
+   transition: box-shadow 0.2s linear;
 
 
 		// .about-snippet-block__code
@@ -920,7 +927,7 @@
          background: #011221;
          border: 1px solid #1E2D3D;
          border-radius: 15px;
-         box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
+         // box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
 		}
 
 		// .about-snippet-block__text
@@ -931,6 +938,11 @@
          line-height: 170%;
          color: #607B96;
 		}
+}
+
+.about-snippet-block:hover {
+   box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
+   transition: box-shadow 0.2s linear;
 }
 
 

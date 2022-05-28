@@ -114,17 +114,20 @@
 /* ========== CLOCK START ===========*/
 
 .header-clock {
+   position: relative;
    display: flex;
    align-items: center;
    text-align: center;
    justify-content: center;
-   position: relative;
    height: 58px;
+   background: #011627;
    border-left: 1px solid #1E2D3D;
    cursor: default;
+   overflow: hidden;
 }
 
 .time {
+   position: relative;
    padding-left: 32px;
    padding-right: 32px;
    font-weight: 450;
@@ -134,9 +137,42 @@
    white-space: nowrap;
    text-shadow: 1px 1px 20px #FEA55F;
    opacity: 0.9;
+   z-index: 10;
    // -webkit-background-clip: text;
    // -webkit-text-fill-color: transparent;
 }
+
+.header-clock::before {
+   content: '';
+   position: absolute;
+   inset: 1px;
+   background: #011627;
+   z-index: 1;
+}
+
+.header-clock::after {
+   content: '';
+   position: absolute;
+   width: 25px;
+   height: 500%;
+   background: linear-gradient(#FEA55F, #4D5BCE);
+   box-shadow: 1px 1px 20px #FEA55F;
+   z-index: 0;
+   animation: clock 15s linear infinite;
+}
+
+
+
+// @keyframes clock {
+
+//    0% {
+//       transform: rotate(0deg);
+//    }
+
+//    100% {
+//       transform: rotate(360deg);
+//    }
+// }
 
 /* ========== CLOCK END ===========*/
 
@@ -183,7 +219,8 @@
 
 .header-active {
    color: #fff;
-   
+   box-shadow: inset 1px 5px 11px rgba(2, 18, 27, 0.71);
+
 }
 
 .header-active::after {
