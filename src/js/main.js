@@ -12,8 +12,10 @@ setInterval(() => {
 
    let dayNight = 'AM'
 
-   if (hours > 12) {
+   if (hours >= 12) {
       dayNight = 'PM'
+   }
+   if (hours > 12) {
       hours = hours - 12
    }
    if (hours < 10) {
@@ -232,6 +234,8 @@ $(document).ready(function() {
 /**================= Появление скрытие блоков details START ========== */
 $(document).ready(function() {
    $('.details-top').click(function() {
+      $(this).toggleClass('white-text')
+      $('.details-bottom').removeClass('white-text')
       $('.details-one').slideToggle(300)
       $('.details-two').slideUp(300)
    })
@@ -239,6 +243,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
    $('.details-bottom').click(function() {
+      $(this).toggleClass('white-text')
+      $('.details-top').removeClass('white-text')
       $('.details-two').slideToggle(300)
       $('.details-one').slideUp(300)
    })

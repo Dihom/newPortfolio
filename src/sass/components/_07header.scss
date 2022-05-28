@@ -67,12 +67,17 @@
 		&__link {
          padding: 18px 32px;
          @extend %header-font;
-         transition: color 0.2s ease-in-out;
+         transition-property: color;
+         transition-duration: 0.2s;
+         transition-timing-function: ease-in-out;
 		}
 
       &__link:hover {
          color: #fff;
-         transition: color 0.2s ease-in-out;
+         transition-property: color;
+         transition-duration: 0.2s;
+         transition-timing-function: ease-in-out;
+         // transform: translateY(-1.5px);
       }
 
       &__link::after {

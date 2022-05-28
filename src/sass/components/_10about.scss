@@ -113,8 +113,8 @@
       // .menu-personal-info__item
 
       &__item {
-         padding-top: 21px;
-         padding-bottom: 21px;
+         padding-top: 30px;
+         padding-bottom: 20px;
          overflow: hidden;
          // display: none;
          border-bottom: 1px solid #1e2d3d;
@@ -318,8 +318,8 @@
       // .menu-professional-info__item
 
       &__item {
-         padding-top: 21px;
-         padding-bottom: 21px;
+         padding-top: 30px;
+         padding-bottom: 20px;
          overflow: hidden;
          // display: none;
          border-bottom: 1px solid #1e2d3d;
@@ -459,8 +459,8 @@
 		// .menu-hobbies-info__item
 
 		&__item {
-         padding-top: 21px;
-         padding-bottom: 21px;
+         padding-top: 30px;
+         padding-bottom: 20px;
          overflow: hidden;
          // display: none;
          border-bottom: 1px solid #1e2d3d;
@@ -531,27 +531,6 @@
 
 
 /*====== ABOUT MENU Hobbies END ===========================================================================*/
-
-
-
-/* Классы для JavaScript About Menu===========================================================*/
-
-.active {
-   display: block;
-}
-
-.white-text {
-   color: #FFFFFF;
-   transition: color 0.2s ease-in-out;
-}
-
-.active-text-color {
-   color: #E99287;
-   transition: color 0.2s ease-in-out;
-}
-
-/* ======================================================================================*/
-
 
 
 
@@ -628,28 +607,31 @@
 .about-info-item {
    display: flex;
    flex-direction: column;
+   margin: 30px 46px 20px 20px;
    height: 100%;
+   background: #011221;
+   border: 1px solid #1E2D3D;
+   border-radius: 15px;
+   box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
    // border-top: 1px solid #1e2d3d;
 		// .about-info-item__text
 
 		&__text {
          position: relative;
-         padding-left: 38px;
-         padding-right: 38px;
-         padding-top: 18px;
-         margin-bottom: 100px;
+         padding: 40px 30px;
+         // margin-bottom: 100px;
          height: 100%;
 		}
 
-      &__text::after {
-         content: '';
-         position: absolute;
-         right: 3.75px;
-         top: 4.9px;
-         width: 18.5px;
-         height: 7px;
-         background: #607B96;
-      }
+      // &__text::after {
+      //    content: '';
+      //    position: absolute;
+      //    right: 3.75px;
+      //    top: 4.9px;
+      //    width: 18.5px;
+      //    height: 7px;
+      //    background: #607B96;
+      // }
 
 		// .about-info-item__stroke
 
@@ -689,6 +671,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   padding-bottom: 40px;
 }
 
 // .about-info-btn__link
@@ -771,6 +754,7 @@
    width: 15px;
    left: 80%;
 }
+// .about-info-btn =========================================================
 
 
 /*====== ABOUT SNIPPET ====================================================================*/
@@ -812,15 +796,15 @@
    position: relative;
 }
 
-.snippet-wrapper::after {
-   content: '';
-   position: absolute;
-   right: 3.75px;
-   top: 4.9px;
-   width: 18.5px;
-   height: 7px;
-   background: #607B96;
-}
+// .snippet-wrapper::after {
+//    content: '';
+//    position: absolute;
+//    right: 3.75px;
+//    top: 4.9px;
+//    width: 18.5px;
+//    height: 7px;
+//    background: #607B96;
+// }
 
 .about-snippet-item {
    position: relative;
@@ -1014,3 +998,20 @@
 }
 
 
+/* Классы для JavaScript About Menu===========================================================*/
+
+.active {
+   display: block;
+}
+
+.white-text {
+   color: #FFFFFF;
+   transition: color 0.2s ease-in-out;
+}
+
+.active-text-color {
+   color: #E99287;
+   transition: color 0.2s ease-in-out;
+}
+
+/* ======================================================================================*/
