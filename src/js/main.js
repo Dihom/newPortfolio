@@ -56,6 +56,12 @@ $(document).ready(function() {
       $('.professional-info').slideUp(300)
       $('.hobbies-text-active').slideUp(300)
       $('.hobbies-info').slideUp(300)
+      $('.resume-text-active').slideUp(300)
+      $('.resume-info').slideUp(300)
+      $('.education-text-active').slideUp(300)
+      $('.education-info').slideUp(300)
+      $('.interests-text-active').slideUp(300)
+      $('.interests-info').slideUp(300)
    })
 })
 
@@ -77,6 +83,13 @@ $(document).ready(function() {
       $('.menu-wrapper-professional').slideDown(300)
       $('.hobbies-text-active').slideUp(300)
       $('.hobbies-info').slideUp(300)
+      $('.resume-text-active').slideUp(300)
+      $('.resume-info').slideUp(300)
+      $('.resume').removeClass('active-text-color')
+      $('.education-text-active').slideUp(300)
+      $('.education-info').slideUp(300)
+      $('.interests-text-active').slideUp(300)
+      $('.interests-info').slideUp(300)
    })
 })
 
@@ -99,6 +112,12 @@ $(document).ready(function() {
       $('.professional-info').slideUp(300)
       $('.hobbies-text-active').slideDown(300)
       $('.hobbies-info').slideDown(300)
+      $('.resume-text-active').slideUp(300)
+      $('.resume-info').slideUp(300)
+      $('.education-text-active').slideUp(300)
+      $('.education-info').slideUp(300)
+      $('.interests-text-active').slideUp(300)
+      $('.interests-info').slideUp(300)
    })
 })
 // ======= Слайдер в блоке меню about-me ОТКРЫТИЕ ЗАКРЫТИЕ блоков END =======//
@@ -158,6 +177,12 @@ $(document).ready(function() {
    $('.resume').click(function() {
       $(this).addClass('active-text-color')
       $('.education').removeClass('active-text-color')
+      $('.resume-text-active').slideDown(300)
+      $('.resume-info').slideDown(300)
+      $('.professional-text-active').slideUp(300)
+      $('.professional-info').slideUp(300)
+      $('.education-text-active').slideUp(300)
+      $('.education-info').slideUp(300)
    })
 })
 
@@ -165,6 +190,12 @@ $(document).ready(function() {
    $('.education').click(function() {
       $(this).addClass('active-text-color')
       $('.resume').removeClass('active-text-color')
+      $('.education-text-active').slideDown(300)
+      $('.education-info').slideDown(300)
+      $('.professional-text-active').slideUp(300)
+      $('.professional-info').slideUp(300)
+      $('.resume-text-active').slideUp(300)
+      $('.resume-info').slideUp(300)
    })
 })
 // ======= Слайдер в блоке меню about-me professional-info END =======//
@@ -191,7 +222,10 @@ $(document).ready(function() {
 $(document).ready(function() {
    $('.interests').click(function() {
       $(this).addClass('active-text-color')
-      
+      $('.interests-text-active').slideDown(300)
+      $('.interests-info').slideDown(300)
+      $('.hobbies-text-active').slideUp(300)
+      $('.hobbies-info').slideUp(300)
    })
 })
 

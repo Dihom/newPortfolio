@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('chunk/head.html')
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Projects</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;450;500;700&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
 <body>
 
 @@include('chunk/svgsprite.html')
@@ -10,23 +20,44 @@
    @@include('chunk/header.html')
 
    <main class="main">
-      <h1 id="element">Projects</h1>
-      <span class="type-effect" id="element"></span>
 
 
-      <div id="myElement"></div>
+
+      <section class="projects">
+
+         <div class="projects-menu">
+            <div class="projects-menu-title">projects</div>
+            <div class="projects-menu-list">
+
+               <div class="projects-menu-list__item">
+                  <input type="checkbox" id="html-projects" name="html-projects">
+                  <svg class="html-svg"><use xlink:href="#html"></use></svg>
+                  <label for="html-projects" class="html-projects">HTML</label>
+               </div>
+
+               <div class="projects-menu-list__item">
+                  <input type="checkbox" id="css-projects" name="css-projects">
+                  <svg class="css-svg"><use xlink:href="#css"></use></svg>
+                  <label for="css-projects" class="css-projects">CSS</label>
+               </div>
+
+            </div>
+         </div>
+
+         <div class="projects-info">
+
+         </div>
+
+
+      </section>
+
+
       
    </main>
 
-@@include('chunk/footer.html')
 
-</div>
-<div id="replaceStrings"></div>
+   @@include('chunk/footer.html')
 
-
-
-
-   
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="js/main.js"></script>
 </body>

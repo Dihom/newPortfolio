@@ -15,12 +15,14 @@ const shorthand = require('gulp-shorthand')
 const groupCssMediaQueries = require('gulp-group-css-media-queries')
 const sass = require('gulp-sass')(require('sass'))
 const sassGlob = require('gulp-sass-glob')
+// const sourcemaps = require('gulp-sourcemaps')
 // const webpCss = require('gulp-webp-css')
 
 
 // Обработка SCSS
 const scss = () => {
    return src(path.scss.src, { sourcemaps: app.isDev})
+      // .pipe(sourcemaps.init())
       // .pipe(plumber())
       .pipe(sassGlob())
       .pipe(sass())
@@ -28,6 +30,7 @@ const scss = () => {
       .pipe(autoprefixer())
       .pipe(shorthand())
       .pipe(groupCssMediaQueries())
+      // .pipe(sourcemaps.write('.'))
       .pipe(size({title: 'main.css'}))
       .pipe(dest(path.scss.dest, { sourcemaps: app.isDev}))
       .pipe(rename({ suffix: '.min' }))

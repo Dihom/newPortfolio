@@ -1,0 +1,14 @@
+.projects {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 58px;
+   bottom: 59px;
+   display: flex;
+   // justify-content: space-between;
+}
+
+.projects-menu-list__item use {
+   width: 18px;
+   height: 20px;
+}
