@@ -339,3 +339,15 @@ $(function() {
 //    html: true
 //    // nextStringDelay: 1000 
 // }).go();
+
+
+
+
+
+// ======= Слайдер в блоке меню PROJECTS-MENU START =======//
+$(document).ready(function() {
+   $('.projects-menu-title').click(function() {
+      $(this).toggleClass('active-projects')
+      $('.projects-menu-list').slideToggle(300)
+   })
+})

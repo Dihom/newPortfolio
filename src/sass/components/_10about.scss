@@ -62,7 +62,7 @@
 /*====== ABOUT MENU ===========================================================================*/
 
 .about-menu {
-   width: 243px;
+   width: 242.5px;
    // width: 100%;
    height: 100%;
    border-right: 1px solid #1e2d3d;
@@ -612,6 +612,7 @@
    background: #011221;
    border: 1px solid #1E2D3D;
    border-radius: 15px;
+   box-shadow: inset 1px 5px 11px rgba(2, 18, 27, 0.71);
    transition: box-shadow 0.2s linear;
 
 		// .about-info-item__text
@@ -693,6 +694,7 @@
    background-color: #607B96;
    font-size: 16px;
    font-weight: 500;
+   line-height: 18px;
    letter-spacing: 0;
    transition: 0.5s;
 }
@@ -928,7 +930,7 @@
          background: #011221;
          border: 1px solid #1E2D3D;
          border-radius: 15px;
-         // box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #43d9ac34;
+         box-shadow: inset 1px 5px 11px rgba(2, 18, 27, 0.71);
 		}
 
 		// .about-snippet-block__text

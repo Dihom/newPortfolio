@@ -26,25 +26,93 @@
       <section class="projects">
 
          <div class="projects-menu">
-            <div class="projects-menu-title">projects</div>
+
+            <div class="projects-menu-item">
+               <div class="projects-menu-title active-projects">projects</div>
+            </div>
+
+            <!-- ==== Project-menu-list ==== -->
             <div class="projects-menu-list">
 
                <div class="projects-menu-list__item">
                   <input type="checkbox" id="html-projects" name="html-projects">
-                  <svg class="html-svg"><use xlink:href="#html"></use></svg>
-                  <label for="html-projects" class="html-projects">HTML</label>
+                  <svg class="html-svg projects-menu-list__icon"><use xlink:href="#html"></use></svg>
+                  <label for="html-projects" class="html-projects projects-menu-list__text">HTML</label>
                </div>
 
                <div class="projects-menu-list__item">
                   <input type="checkbox" id="css-projects" name="css-projects">
-                  <svg class="css-svg"><use xlink:href="#css"></use></svg>
-                  <label for="css-projects" class="css-projects">CSS</label>
+                  <svg class="css-svg projects-menu-list__icon"><use xlink:href="#css"></use></svg>
+                  <label for="css-projects" class="css-projects projects-menu-list__text">CSS</label>
                </div>
 
-            </div>
+               <div class="projects-menu-list__item">
+                  <input type="checkbox" id="javascript-projects" name="javascript-projects">
+                  <svg class="javascript-svg projects-menu-list__icon"><use xlink:href="#javascript"></use></svg>
+                  <label for="javascript-projects" class="javascript-projects projects-menu-list__text">JavaScript</label>
+               </div>
+
+               <div class="projects-menu-list__item">
+                  <input type="checkbox" id="react-projects" name="react-projects">
+                  <svg class="react-svg projects-menu-list__icon"><use xlink:href="#react"></use></svg>
+                  <label for="react-projects" class="react-projects projects-menu-list__text">React</label>
+               </div>
+
+            </div><!-- ==== Project-menu-list ==== -->
          </div>
 
+
+
+      <!-- ================== PROJESCTS INFO =================== -->
          <div class="projects-info">
+
+            <div class="projects-info-title">
+               <div class="projects-info-title__text">HTML; CSS</div>
+            </div>
+
+            <div class="projects-info-list">
+
+               <ul class="projects-info-item">
+
+                  <li class="projects-info-cards">
+                     <div class="projects-info-cards__title">Project 1 <span>// _ui-animations</span></div>
+                     <div class="projects-info-cards__wrapper">
+                        <div class="projects-info-cards__item">
+                           <div class="projects-info-cards__text">Duis aute irure dolor in velit esse cillum dolore.</div>
+                           <div class="projects-info-cards__btn">
+                              <button class="projects-info-cards__link"><span>view-project</span><i></i></button>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+
+                  <li class="projects-info-cards">
+                     <div class="projects-info-cards__title">Project 2 <span>// _tetris-game</span></div>
+                     <div class="projects-info-cards__wrapper second-wrapper">
+                        <div class="projects-info-cards__item">
+                           <div class="projects-info-cards__text">Duis aute irure dolor in velit esse cillum dolore.</div>
+                           <div class="projects-info-cards__btn">
+                              <button class="projects-info-cards__link"><span>view-project</span><i></i></button>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+
+                  <li class="projects-info-cards">
+                     <div class="projects-info-cards__title">Project 3 <span>// _ethereum</span></div>
+                     <div class="projects-info-cards__wrapper third-wrapper">
+                        <div class="projects-info-cards__item">
+                           <div class="projects-info-cards__text">Duis aute irure dolor in velit esse cillum dolore.</div>
+                           <div class="projects-info-cards__btn">
+                              <button class="projects-info-cards__link"><span>view-project</span><i></i></button>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+
+               </ul>
+
+            </div>
 
          </div>
 
