@@ -58,6 +58,7 @@
 .telegram:hover, .vkontakte:hover {
    fill: #607b96;
    opacity: 1;
+   box-shadow: 0 0 15px #ffee10;
    transition-property: fill, opacity;
    transition-duration: 0.2s;
    transition-timing-function: ease-in-out;
