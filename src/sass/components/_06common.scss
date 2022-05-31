@@ -8,7 +8,34 @@
    top: 30px;
    bottom: 30px;
    background-color: #011627;
-   box-shadow: 0.1px 0.1px 25px #43d9ac34;
+   // box-shadow: 0.1px 0.1px 25px #43d9ac34;
+   box-shadow: 0.1px 0.1px 25px #4d5cce67;
    border-radius: 8px;
    border: 1px solid #1E2D3D;
+}
+
+*,
+html * /* override x.xhtml.ru style */ 
+{
+   scrollbar-width: thin;
+   scrollbar-color: #1E2D3D #011627;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+   height: 6px;
+   width: 6px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+   background: #011627;
+
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+   background-color: #1E2D3D;
+   border-radius: 3px;
+   border: 1px solid #011627;
+   // box-shadow: 1px 1px 15px #FEA55F;
+
 }

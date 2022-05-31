@@ -1,6 +1,9 @@
+
+
 .footer {
    display: block;
 }
+
 .footer-wrapper {
    padding-left: 22px;
    padding-right: 22px;
@@ -9,14 +12,13 @@
    justify-content: space-between;
    border-top: 1px solid #1E2D3D;
 }
+
 .footer-left {
    display: flex;
    align-items: center;
-   // height: 58px;
+   height: 58px;
    border-right: 1px solid #1E2D3D;
    position: relative;
-
-
 
 		// .footer-left__text
 
@@ -35,9 +37,29 @@
 		&__social {
          display: flex;
          align-items: center;
+         height: 100%;
 		}
 }
-.vkontakte, .telegram {
+
+// .ri-whatsapp-fill, .ri-telegram-fill {
+//    display: flex;
+//    align-items: center;
+//    justify-content: center;
+//    padding-left: 14px;padding-right: 14px;
+//    font-size: 25px;
+//    color: #607b9671;
+// }
+
+// .ri-whatsapp-fill {
+//    border-right: 1px solid #1E2D3D;
+//    height: 100%;
+// }
+
+// .ri-whatsapp-fill:hover, .ri-telegram-fill:hover {
+//    color: #607b96;
+// }
+
+.whatsapp, .telegram {
    margin-right: 14px;
    margin-left: 14px;
    transition-property: fill, opacity;
@@ -55,10 +77,10 @@
 }
 
 
-.telegram:hover, .vkontakte:hover {
+.telegram:hover, .whatsapp:hover {
    fill: #607b96;
    opacity: 1;
-   box-shadow: 0 0 15px #ffee10;
+   // box-shadow: 0 0 15px #ffee10;
    transition-property: fill, opacity;
    transition-duration: 0.2s;
    transition-timing-function: ease-in-out;
@@ -79,23 +101,23 @@
          padding-left: 23px;
          @extend %header-font;
          border-left: 1px solid #1E2D3D;
-         cursor: default;
-         // transition: color 0.3s ease-in-out;
+         transition: color 0.3s ease-in-out;
 		}
 }
 .github {
-   // cursor: pointer;
-   z-index: 1000;
-   // transition: fill 0.3s ease-in-out;
+   cursor: pointer;
+   // z-index: 1000;
+   transition: opacity 0.2s ease-in-out;
+
 
 }
 
-// .footer-right:hover .github {
-//    fill: #fff;
-//    transition: fill 0.2s ease-in-out;
-// }
+.footer-right:hover .github {
+   opacity: 1;
+   transition: opacity 0.2s ease-in-out;
+}
 
-// .footer-right:hover .footer-right__username {
-//    color: #fff;
-//    transition: color 0.2s ease-in-out;
-// }
+.footer-right:hover .footer-right__username {
+   color: rgba(255, 255, 255, 0.637);
+   transition: color 0.2s ease-in-out;
+}

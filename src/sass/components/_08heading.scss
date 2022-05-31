@@ -104,10 +104,10 @@
    color: #4D5BCE;
 }
 .github {
-   color: #43D9AD;
+   color: rgb(67, 217, 173);
 }
 .github-link {
-   color: #E99287;
+   color: rgb(233, 146, 135);
 	position: relative;
 	cursor: pointer;
 	// transition: color 0.2s ease-in-out;	
@@ -150,6 +150,36 @@
 	border: 1px solid #0C1616;
 	box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.3);
 	border-radius: 8px;
+
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: -50px;
+			top: -50px;
+			width: 60%;
+			height: 60%;
+			// border-radius: 8px;
+			background: rgb(67, 217, 173);
+			filter: blur(75px);
+			opacity: 0.4;
+			z-index: -1;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			width: 70%;
+			height: 70%;
+			// border-radius: 50%;
+			background: rgb(77, 91, 206);
+			filter: blur(75px);
+			opacity: 0.4;
+			// transform: rotate(45deg);
+			z-index: -1;
+		}
 	
 		// .heading-right__game
 
