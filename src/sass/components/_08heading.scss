@@ -14,16 +14,6 @@
    width: 100%;
 }
 
-.game-shadow {
-   position: absolute;
-   display: block;
-   right: -170px;
-   top: -116px;
-   width: 770px;
-   height: 732px;
-	z-index: 0;
-	animation: rotate 40s linear infinite;
-}
 
 // @keyframes rotate {
 // 	0% {
@@ -381,7 +371,7 @@
 	font-size: 14px;
 	line-height: 18px;
    letter-spacing: 0;
-   transition: 0.5s;
+   transition: 0.4s;
 }
 
 .start-game-btn__link:hover {
@@ -425,7 +415,7 @@
    height: 4px;
    background: #011627;
    transform: translateX(-50%) skewX(325deg);
-   transition: 0.5s;
+   transition: 0.4s;
 }
 
 .start-game-btn__link:hover i::before {
@@ -442,7 +432,7 @@
    height: 4px;
    background: #011627;
    transform: translateX(-50%) skewX(325deg);
-   transition: 0.5s;
+   transition: 0.4s;
 }
 
 .start-game-btn__link:hover i::after {
@@ -478,7 +468,7 @@
 	font-size: 14px;
 	line-height: 18px;
    letter-spacing: 0;
-   transition: 0.5s;
+   transition: 0.4s;
 }
 
 .skip-game-btn__link:hover {
@@ -521,7 +511,7 @@
    height: 4px;
    background: #2b5977;
    transform: translateX(-50%) skewX(325deg);
-   transition: 0.5s;
+   transition: 0.4s;
 }
 
 .skip-game-btn__link:hover i::before {
@@ -538,7 +528,7 @@
    height: 4px;
    background: #2b5977;
    transform: translateX(-50%) skewX(325deg);
-   transition: 0.5s;
+   transition: 0.4s;
 }
 
 .skip-game-btn__link:hover i::after {

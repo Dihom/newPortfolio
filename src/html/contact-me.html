@@ -20,7 +20,82 @@
    @@include('chunk/header.html')
 
    <main class="main">
-      <h1>Contact me</h1>
+      
+      <section class="contacts">
+
+         <div class="contacts-menu">
+
+            <div class="contacts-menu__title active-contacts">contacts</div>
+            <div class="contacts-menu__list">
+               <a href="mailto:dev-homyakov@yandex.ru" class="contacts-menu__email">dev-homyakov@yandex.ru</a>
+               <a href="tel:89279345557" class="contacts-menu__phone">+7(927)9345557</a>
+            </div>
+
+            <div class="contacts-menu__title find-me-menu active-find-me">find-me-also-in</div>
+            <div class="contacts-menu-find__list">
+               <a href="https://vk.com/homyakovda" target="_blank" class="contacts-menu-find__link"><svg class="link-find"><use xlink:href="#link"></use></svg>VK_page</a>
+            </div>
+
+         </div>
+
+
+         <div class="contacts-form">
+            <div class="contacts-form-title">contacts</div>
+            
+            <div class="contacts-form-item">
+
+               <div class="contacts-form-left">
+                  <form action="#" class="contacts-form-action" id="form">
+
+                     <div class="contacts-form__name">
+                        <label for="name">_name:</label>
+                        <input type="text" id="name">
+                     </div>
+
+                     <div class="contacts-form__email">
+                        <label for="name">_email:</label>
+                        <input type="email" id="email">
+                     </div>
+
+                     <div class="contacts-form__text">
+                        <label for="message">_message:</label>
+                        <textarea name="text" id="message" cols="30" rows="10"></textarea>
+                     </div>
+
+                     <button type="submit">submit-message</button>
+                     
+                  </form>
+               </div>
+
+               <div class="contacts-form-right">
+                  <ul class="contacts-form-right__text">
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">1</p>const button = document.querySelector('#sendBtn');</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">2</p></li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">3</p>const messafge = {</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">4</p>name: "<span></span>",</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">5</p>email: "<span></span>",</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">6</p>message: "<span></span>",</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">7</p>}</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">8</p></li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">9</p>*button.addEventListener('click', () => {</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">10</p>form.send(message);</li>
+                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">11</p>})</li>
+                  </ul>
+               </div>
+
+            </div>
+         </div>
+
+
+
+
+      </section>
+
+
+
+
+
+
    </main>
 
 @@include('chunk/footer.html')

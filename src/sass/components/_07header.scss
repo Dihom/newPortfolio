@@ -89,7 +89,7 @@
          width: 0%;
          background: #FEA55F;
          box-shadow: 1px 1px 15px rgb(254, 165, 95);
-         transition: width 0.4s ease-in-out;
+         transition: width 0.3s ease-in-out;
       }
 
       &__link:hover::after {
@@ -100,7 +100,7 @@
          right: 0;
          bottom: -2px;
          height: 3px;
-         transition: width 0.4s ease-in-out;
+         transition: width 0.3s ease-in-out;
       }
 }
 
@@ -202,7 +202,7 @@
    width: 0;
    background: #FEA55F;
    box-shadow: 1px 1px 15px #FEA55F;
-   transition: width 0.4s ease-in-out;
+   transition: width 0.3s ease-in-out;
 }
 
 .header-contact:hover::after {
@@ -213,7 +213,7 @@
    height: 3px;
    width: 100%;
    background: #FEA55F;
-   transition: width 0.4s ease-in-out;
+   transition: width 0.3s ease-in-out;
 }
 
 .header-active {

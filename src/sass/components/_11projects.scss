@@ -39,12 +39,12 @@
    left: 14px;
    top: 13px;
    transform: rotate(-90deg);
-   transition: transform 0.3s ease-in-out;
+   transition: transform 0.2s ease-in-out;
 }
 
 .projects-menu-title.active-projects:after {
    transform: rotate(0deg);
-   transition: transform 0.3s ease-in-out;
+   transition: transform 0.2s ease-in-out;
 }
 
 .projects-menu-list {
