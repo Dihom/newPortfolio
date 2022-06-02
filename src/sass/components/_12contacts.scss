@@ -16,7 +16,7 @@
 .contacts-menu {
 	display: flex;
 	flex-direction: column;
-   width: 310.5px;
+   min-width: 310.5px;
 	height: 100%;
 	border-right: 1px solid #1e2d3d;
 
@@ -155,42 +155,101 @@
 		}
 }
 
+// .contacts-form::after {
+// 	content: '';
+// 	position: absolute;
+// 	left: 630px;
+// 	top: 47px;
+// 	bottom: 0;
+// 	width: 1px;
+// 	background: #1e2d3d;
+// }
+
 .contacts-form {
-	flex-grow: 1;
-	flex-shrink: 1;
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+
+		&__label {
+			margin-bottom: 10px;
+			font-weight: 450;
+			font-size: 16px;
+			line-height: 21px;
+			color: #607B96;
+		}
 
 		// .contacts-form__name
 
 		&__name {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 24px;
 		}
 
 		// .contacts-form__email
 
 		&__email {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 24px;
 		}
 
 		// .contacts-form__text
 
 		&__text {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 24px;
+		}
+
+		&__btn {
+
 		}
 }
 
+#name, #email {
+	height: 41px;
+	border-radius: 8px;
+	background-color: #011221;
+	border: none;
+	outline: 1px solid #1E2D3D;
+}
+
+#message {
+	// height: 145px;
+	// max-width: 342px;
+	border-radius: 8px;
+	background-color: #011221;
+	border: none;
+	outline: 1px solid #1E2D3D;
+}
+
 .contacts-form-title {
+	padding: 12px 0px 12px 15px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: #607B96;
+	border-bottom: 1px solid #1e2d3d;
 }
 
 .contacts-form-item {
 	display: flex;
-	height: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .contacts-form-left {
-	max-width: 630px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// max-width: 630px;
 	width: 100%;
-	// height: 100%;
+	height: 100%;
 	padding: 115px 130px 0 130px;
 	border-right: 1px solid #1e2d3d;
-	overflow: hidden;
-
+	overflow-y: auto;
 }
 
 .contacts-form-action {
@@ -198,8 +257,11 @@
 
 .contacts-form-right {
 	padding: 115px 75px 0px 110px;
-	max-width: 815px;
+	// max-width: 841px;
 	width: 100%;
+	height: 100%;
+
+	overflow-y: auto;
 
 		// .contacts-form-right__text
 
