@@ -351,3 +351,88 @@ $(document).ready(function() {
       $('.projects-menu-list').slideToggle(300)
    })
 })
+// ======= Слайдер в блоке меню PROJECTS-MENU END =======//
+
+
+
+// ======= Слайдер в блоке меню CONTACT-ME START =======//
+$(document).ready(function() {
+   $('.contacts-menu__title').click(function() {
+      $(this).toggleClass('active-contacts')
+      $('.contacts-menu__list').slideToggle(300)
+   })
+})
+
+$(document).ready(function() {
+   $('.contacts-menu-find__title').click(function() {
+      $(this).toggleClass('active-contacts')
+      $('.contacts-menu-find__list').slideToggle(300)
+   })
+})
+// ======= Слайдер в блоке меню CONTACT-ME END =======//
+
+
+// ======= Текс написанный в форме отображается в соседнем блоке CONTACT-ME START =======//
+document.getElementById('name').addEventListener('input', function() {
+   document.getElementById('userName').innerText = this.value
+})
+
+document.getElementById('email').addEventListener('input', function() {
+   document.getElementById('userEmail').innerText = this.value
+})
+
+document.getElementById('message').addEventListener('input', function() {
+   document.getElementById('userMessage').innerText = this.value
+})
+// ======= Текс написанный в форме отображается в соседнем блоке CONTACT-ME END =======//
+
+
+// ======= Валидация формы и отправка данных на почту CONTACT-ME START =======//
+document.addEventListener('DOMContentLoaded', function () {
+   const form = document.getElementById('form')
+   form.addEventListener('submit', formSend)
+
+   async function formSend(e) {
+      e.preventDefault()
+
+      let error = formValidate(form)
+   }
+
+   function formValidate(form) {
+      let error = 0
+      let formReq = document.querySelectorAll('._req')
+
+      for (let index = 0; index < formReq.length; index++) {
+         const input = formReq[index]
+         formRemoveError(input)
+
+         if (input.classList.contains('_email')) {
+            if (emailTest(input)) {
+               formAddError(input)
+               error++
+            }
+         }else {
+            if (input.value === '') {
+               formAddError(input)
+               error++
+            }
+         }
+
+
+      }
+   }
+
+   function formAddError(input) {
+      input.parentElement.classList.add('_error')
+      input.classList.add('_error')
+   }
+
+   function formRemoveError(input) {
+      input.parentElement.classList.remove('_error')
+      input.classList.remove('_error')
+   }
+
+   function emailTest(input) {
+      return !/^\w+([\.]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
+   }
+})

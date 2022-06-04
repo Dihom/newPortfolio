@@ -31,7 +31,7 @@
                <a href="tel:89279345557" class="contacts-menu__phone">+7(927)9345557</a>
             </div>
 
-            <div class="contacts-menu__title find-me-menu active-find-me">find-me-also-in</div>
+            <div class="contacts-menu-find__title active-contacts">find-me-also-in</div>
             <div class="contacts-menu-find__list">
                <a href="https://vk.com/homyakovda" target="_blank" class="contacts-menu-find__link"><svg class="link-find"><use xlink:href="#link"></use></svg>VK_page</a>
             </div>
@@ -49,12 +49,12 @@
 
                      <div class="contacts-form__name">
                         <label class="contacts-form__label" for="name">_name:</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" class="_req">
                      </div>
 
                      <div class="contacts-form__email">
                         <label class="contacts-form__label" for="name">_email:</label>
-                        <input type="email" id="email">
+                        <input type="text" id="email" class="_req _email">
                      </div>
 
                      <div class="contacts-form__text">
@@ -62,28 +62,30 @@
                         <textarea name="text" id="message" cols="10" rows="10"></textarea>
                      </div>
 
-                     <button class="contacts-form__btn" type="submit">submit-message</button>
+                     <div class="contacts-form__button">
+                        <button class="contacts-form__btn" type="submit" id="sendBtn"><span>submit message</span><i></i></button>
+                     </div>
                      
                   </form>
                </div>
 
-               <div class="contacts-form-right">
-                  <ul class="contacts-form-right__text">
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">1</p>const button = document.querySelector('#sendBtn');</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">2</p></li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">3</p>const messafge = {</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">4</p>name: "<span></span>",</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">5</p>email: "<span></span>",</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">6</p>message: "<span></span>",</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">7</p>}</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">8</p></li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">9</p>*button.addEventListener('click', () => {</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">10</p>form.send(message);</li>
-                     <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">11</p>})</li>
-                  </ul>
-               </div>
-
             </div>
+         </div>
+
+         <div class="contacts-form-right">
+            <ul class="contacts-form-right__text">
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">1</p><span class="purple">const</span>&nbsp;<span class="blue">button</span>&nbsp;<span class="purple">=</span>&nbsp;<span class="blue">document.querySelector</span>(<span class="orange">'#sendBtn'</span>)</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">2</p></li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">3</p><span class="purple">const</span>&nbsp; <span class="blue">message</span>&nbsp;<span class="purple">=</span>&nbsp;{</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">4</p>&nbsp;<span class="blue">name:</span>&nbsp;<span class="orange">'</span><span class="orange" id="userName"></span><span class="orange">'</span>,</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">5</p>&nbsp;<span class="blue">email:</span>&nbsp;<span class="orange">'</span><span class="orange" id="userEmail"></span><span class="orange">'</span>,</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">6</p>&nbsp;<span class="blue">message:</span>&nbsp;<span class="orange">'</span><span class="orange" id="userMessage"></span><span class="orange">'</span>,</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">7</p>}</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">8</p></li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">9</p><span class="blue">button.addEventListener</span>(<span class="orange">'click'</span>, () <span class="purple">&nbsp;=>&nbsp;</span> {</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">10</p><span class="blue">&nbsp;form.send</span>(<span class="orange">message</span>);</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">11</p>})</li>
+            </ul>
          </div>
 
 
