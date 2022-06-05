@@ -10,6 +10,8 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;450;500;700&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="js/module/just-validate.min.js"></script>
+
    </head>
 <body>
 
@@ -45,21 +47,21 @@
             <div class="contacts-form-item">
 
                <div class="contacts-form-left">
-                  <form action="#" class="contacts-form-action" id="form">
+                  <form name="myForm" action="#" class="form" id="form" method="">
 
                      <div class="contacts-form__name">
                         <label class="contacts-form__label" for="name">_name:</label>
-                        <input type="text" id="name" class="_req">
+                        <input type="text" id="name" class="input input-name" placeholder="_Enter your name" data-validate-field="name">
                      </div>
 
                      <div class="contacts-form__email">
                         <label class="contacts-form__label" for="name">_email:</label>
-                        <input type="text" id="email" class="_req _email">
+                        <input type="mail" id="email" class="input input-mail" placeholder="_Enter your e-mail" data-validate-field="email">
                      </div>
 
                      <div class="contacts-form__text">
                         <label class="contacts-form__label" for="message">_message:</label>
-                        <textarea name="text" id="message" cols="10" rows="10"></textarea>
+                        <textarea name="text" id="message" cols="10" rows="10" placeholder="_Enter your message"></textarea>
                      </div>
 
                      <div class="contacts-form__button">
@@ -79,7 +81,7 @@
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">3</p><span class="purple">const</span>&nbsp; <span class="blue">message</span>&nbsp;<span class="purple">=</span>&nbsp;{</li>
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">4</p>&nbsp;<span class="blue">name:</span>&nbsp;<span class="orange">'</span><span class="orange" id="userName"></span><span class="orange">'</span>,</li>
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">5</p>&nbsp;<span class="blue">email:</span>&nbsp;<span class="orange">'</span><span class="orange" id="userEmail"></span><span class="orange">'</span>,</li>
-               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">6</p>&nbsp;<span class="blue">message:</span>&nbsp;<span class="orange">'</span><span class="orange" id="userMessage"></span><span class="orange">'</span>,</li>
+               <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">6</p>&nbsp;<span class="blue">message:</span>&nbsp;<span class="orange">'</span><span class="orange" class="sixth-stroke" id="userMessage"></span><span class="orange">'</span>,</li>
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">7</p>}</li>
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">8</p></li>
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number">9</p><span class="blue">button.addEventListener</span>(<span class="orange">'click'</span>, () <span class="purple">&nbsp;=>&nbsp;</span> {</li>
@@ -88,14 +90,7 @@
             </ul>
          </div>
 
-
-
-
       </section>
-
-
-
-
 
 
    </main>
@@ -104,8 +99,6 @@
 
 </div>
 
-
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="js/main.js"></script>
 </body>
 </html>

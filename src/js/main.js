@@ -1,6 +1,5 @@
 'use strict'
 
-
 // ======= CLOCK in header START =======//
 setInterval(() => {
    const time = document.querySelector('#time')
@@ -343,7 +342,6 @@ $(function() {
 
 
 
-
 // ======= Слайдер в блоке меню PROJECTS-MENU START =======//
 $(document).ready(function() {
    $('.projects-menu-title').click(function() {
@@ -352,6 +350,7 @@ $(document).ready(function() {
    })
 })
 // ======= Слайдер в блоке меню PROJECTS-MENU END =======//
+
 
 
 
@@ -372,6 +371,8 @@ $(document).ready(function() {
 // ======= Слайдер в блоке меню CONTACT-ME END =======//
 
 
+
+
 // ======= Текс написанный в форме отображается в соседнем блоке CONTACT-ME START =======//
 document.getElementById('name').addEventListener('input', function() {
    document.getElementById('userName').innerText = this.value
@@ -387,52 +388,27 @@ document.getElementById('message').addEventListener('input', function() {
 // ======= Текс написанный в форме отображается в соседнем блоке CONTACT-ME END =======//
 
 
+
+
 // ======= Валидация формы и отправка данных на почту CONTACT-ME START =======//
-document.addEventListener('DOMContentLoaded', function () {
-   const form = document.getElementById('form')
-   form.addEventListener('submit', formSend)
-
-   async function formSend(e) {
-      e.preventDefault()
-
-      let error = formValidate(form)
-   }
-
-   function formValidate(form) {
-      let error = 0
-      let formReq = document.querySelectorAll('._req')
-
-      for (let index = 0; index < formReq.length; index++) {
-         const input = formReq[index]
-         formRemoveError(input)
-
-         if (input.classList.contains('_email')) {
-            if (emailTest(input)) {
-               formAddError(input)
-               error++
-            }
-         }else {
-            if (input.value === '') {
-               formAddError(input)
-               error++
-            }
-         }
-
-
+new window.JustValidate('.form', {
+   rules: {
+      
+   },
+   messages: {
+      name: {
+         required: '_Enter your name',
+         minLength: '_Enter 3 or more characters',
+         maxLength: '_Enter no more than 15 characters'
+      },
+      email: {
+         email: '_Enter the correct email',
+         required: '_Enter your e-mail'
       }
-   }
+   },
+   submitHandler: function(thisForm) {
 
-   function formAddError(input) {
-      input.parentElement.classList.add('_error')
-      input.classList.add('_error')
-   }
 
-   function formRemoveError(input) {
-      input.parentElement.classList.remove('_error')
-      input.classList.remove('_error')
-   }
 
-   function emailTest(input) {
-      return !/^\w+([\.]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
    }
 })

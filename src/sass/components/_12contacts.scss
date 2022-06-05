@@ -227,8 +227,10 @@
 }
 
 #name, #email {
-	width: 100%;
+	min-width: 372px;
+	width: 100%;;
 	height: 41px;
+	padding-left: 15px;
 	font-family: 'Fira Code';
 	font-style: normal;
 	font-weight: 450;
@@ -245,13 +247,15 @@
 	box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px #4d5cce67;
 }
 
-#name._error {
-	box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px red;
-}
+// #name._error {
+// 	box-shadow: inset 0.1px 0.1px 10px #00000034, 0.1px 0.1px 8px red;
+// }
 
 #message {
-	// height: 145px;
-	// max-width: 342px;
+	min-width: 372px;
+	width: 100%;
+	height: 145px;
+	padding: 15px;
 	resize: none;
 	font-family: 'Fira Code';
 	font-style: normal;
@@ -262,6 +266,12 @@
 	background-color: #011221;
 	border: none;
 	outline: 1px solid #1E2D3D;
+	overflow-y: auto;
+}
+
+#name::placeholder, #email::placeholder, #message::placeholder {
+	color: #1E2D3D;
+	font-size: 14px;
 }
 
 .contacts-form-title {
@@ -274,20 +284,20 @@
 }
 
 .contacts-form-item {
-
+	display: flex;
 }
 
 .contacts-form-left {
+	padding-top: 115px;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
+	align-items: center;
 	// max-width: 630px;
 	width: 100%;
 	height: 100%;
-	padding: 115px 130px;
 }
 
-.contacts-form-action {
+.form {
 	
 }
 
@@ -436,3 +446,4 @@
 .orange {
 	color: rgba(254, 165, 95, 1);
 }
+
