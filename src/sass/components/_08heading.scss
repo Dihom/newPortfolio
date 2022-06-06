@@ -559,3 +559,69 @@
 	height: 20px;
 }
 
+@media (max-width: 1399.98px) {
+
+	.heading-right {
+		display: none;
+	}
+
+	.heading-container {
+		
+		justify-content: center;
+		
+	}
+}
+
+@media (max-width: 1199.98px) {
+
+	.nav, .header-right {
+		display: none;
+	}
+}
+
+@media (max-width: 575.98px) {
+
+	.heading-left {
+		padding: 27px;
+	}
+	
+	.heading-left__greeting {
+		margin-bottom: 10px;
+	}
+
+	.heading-left__name {
+		margin-bottom: 5px;
+		line-height: 100%;
+	}
+
+	.heading-left__profession {
+		margin-bottom: 195px;
+		font-size: 20px;
+		color: #43D9AD;
+	}
+
+	.wrapper {
+		left: 15px;
+		right: 15px;
+		top: 15px;
+		bottom: 15px;
+		
+	}
+
+	.heading-left__game {
+		display: none;
+	}
+
+	.heading-left__github-page, .heading-left__github-link {
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+
+	.not-mobile {
+		display: none;
+	}
+
+	.footer-right {
+		display: none;
+	}
+}
