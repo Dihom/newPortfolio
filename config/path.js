@@ -34,11 +34,5 @@ module.exports = {
       src: pathSrc + '/font/*.{eot,ttf,otf,ttc,woff,woff2,svg}',
       watch: pathSrc + '/font/**/*.{eot,ttf,otf,ttc,woff,woff2,svg}',
       dest: pathDest + '/font'
-   },
-
-   php: {
-      src: pathSrc + '/php',
-      watch: pathSrc + '/php',
-      dest: pathDest + '/php',
    }
 }

@@ -391,24 +391,59 @@ document.getElementById('message').addEventListener('input', function() {
 
 
 // ======= Валидация формы и отправка данных на почту CONTACT-ME START =======//
-new window.JustValidate('.form', {
-   rules: {
-      
-   },
-   messages: {
-      name: {
-         required: '_Enter your name',
-         minLength: '_Enter 3 or more characters',
-         maxLength: '_Enter no more than 15 characters'
-      },
-      email: {
-         email: '_Enter the correct email',
-         required: '_Enter your e-mail'
-      }
-   },
-   submitHandler: function(thisForm) {
-
-
-
+const validation = new JustValidate('.form', {
+   errorLabelStyle: {
+      color: '#FEA55F',
    }
 })
+
+validation
+   .addField('.input-name', [
+      // {
+      //    rule: 'minLength',
+      //    value: 3,
+      // },
+      // {
+      //    rule: 'maxLength',
+      //    value: 30,
+      // },
+      {
+         rule: 'required',
+         value: true,
+         errorMessage: '_Enter your name'
+      }
+   ])
+   .addField('.input-mail', [
+      {
+         rule: 'required',
+         value: true,
+         errorMessage: '_Enter your e-mail'
+      },
+      {
+         rule: 'email',
+         value: true,
+         errorMessage: '_Enter the correct email'
+      },
+   ]).onSuccess((event) => {
+      console.log('Validation passes and form submitted', event)
+
+
+   let formData = new FormData(event.target);
+
+   console.log(...formData);
+
+   let xhr = new XMLHttpRequest();
+
+   xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+         if (xhr.status === 200) {
+            console.log('Отправлено');
+         }
+      }
+   }
+
+      xhr.open('POST', 'mail.php', true);
+      xhr.send(formData);
+
+      event.target.reset();
+   });

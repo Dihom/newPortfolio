@@ -10,7 +10,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;450;500;700&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="js/module/just-validate.min.js"></script>
+      <script src="js/module/just-validate3.3.3.min.js"></script>
 
    </head>
 <body>
@@ -47,16 +47,16 @@
             <div class="contacts-form-item">
 
                <div class="contacts-form-left">
-                  <form name="myForm" action="#" class="form" id="form" method="">
+                  <form name="myForm" action="#" class="form" id="form" method="POST">
 
                      <div class="contacts-form__name">
                         <label class="contacts-form__label" for="name">_name:</label>
-                        <input type="text" id="name" class="input input-name" placeholder="_Enter your name" data-validate-field="name">
+                        <input autocomplete="off" type="text" name="Name" id="name" class="input input-name" placeholder="_Enter your name" data-validate-field="name">
                      </div>
 
                      <div class="contacts-form__email">
                         <label class="contacts-form__label" for="name">_email:</label>
-                        <input type="mail" id="email" class="input input-mail" placeholder="_Enter your e-mail" data-validate-field="email">
+                        <input autocomplete="off" name="Email" type="mail" id="email" class="input input-mail" placeholder="_Enter your e-mail" data-validate-field="email">
                      </div>
 
                      <div class="contacts-form__text">
