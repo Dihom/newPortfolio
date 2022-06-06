@@ -385,6 +385,30 @@ validation.addField('.input-name', [// {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         console.log('Отправлено');
+        var modalWindow = document.querySelector('.contacts-form-modal');
+        var overlay = document.querySelector('.contacts-form-modal__overlay');
+        var btnCloseModalWindow = document.querySelector('.contacts-form-modal__btn');
+        var btnShowModalWindow = document.querySelector('.contacts-form__btn');
+
+        var showModalWindow = function showModalWindow() {
+          modalWindow.classList.remove('hidden');
+          overlay.classList.remove('hidden');
+        };
+
+        var closeModalWindow = function closeModalWindow() {
+          modalWindow.classList.add('hidden');
+          overlay.classList.add('hidden');
+        };
+
+        showModalWindow(); // btnShowModalWindow.addEventListener('click', showModalWindow);
+
+        btnCloseModalWindow.addEventListener('click', closeModalWindow);
+        overlay.addEventListener('click', closeModalWindow);
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && !modalWindow.classList.contains('hidden')) {
+            closeModalWindow();
+          }
+        });
       }
     }
   };
@@ -392,4 +416,5 @@ validation.addField('.input-name', [// {
   xhr.open('POST', 'mail.php', true);
   xhr.send(formData);
   event.target.reset();
+  document.getElementById('userName').innerText.reset();
 });

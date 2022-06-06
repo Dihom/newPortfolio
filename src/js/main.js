@@ -438,6 +438,37 @@ validation
       if (xhr.readyState === 4) {
          if (xhr.status === 200) {
             console.log('Отправлено');
+
+            const modalWindow = document.querySelector('.contacts-form-modal');
+            const overlay = document.querySelector('.contacts-form-modal__overlay');
+            const btnCloseModalWindow = document.querySelector('.contacts-form-modal__btn');
+            const btnShowModalWindow = document.querySelector('.contacts-form__btn');
+
+
+            const showModalWindow = function () {
+               modalWindow.classList.remove('hidden');
+               overlay.classList.remove('hidden');
+            };
+
+            const closeModalWindow = function () {
+               modalWindow.classList.add('hidden');
+               overlay.classList.add('hidden');
+            };
+
+            showModalWindow();
+
+            // btnShowModalWindow.addEventListener('click', showModalWindow);
+
+            btnCloseModalWindow.addEventListener('click', closeModalWindow);
+
+            overlay.addEventListener('click', closeModalWindow);
+
+            document.addEventListener('keydown', function (e) {
+               if (e.key === 'Escape' && !modalWindow.classList.contains('hidden')) {
+                     closeModalWindow()
+               }
+            });
+            
          }
       }
    }

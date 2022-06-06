@@ -38,15 +38,18 @@
                <a href="https://vk.com/homyakovda" target="_blank" class="contacts-menu-find__link"><svg class="link-find"><use xlink:href="#link"></use></svg>VK_page</a>
             </div>
 
-         </div>
+         </div><!-- Contacts Menu -->
 
 
+
+            <!-- Contacts Form -->
          <div class="contacts-form">
             <div class="contacts-form-title">contacts</div>
             
             <div class="contacts-form-item">
 
                <div class="contacts-form-left">
+
                   <form name="myForm" action="#" class="form" id="form" method="POST">
 
                      <div class="contacts-form__name">
@@ -69,10 +72,25 @@
                      </div>
                      
                   </form>
-               </div>
+               </div><!-- Contacts Form Left-->
 
-            </div>
-         </div>
+               <div class="contacts-form-modal hidden">
+
+                  <div class="contacts-form-modal__title">Thank you!</div>
+                  <div class="contacts-form-modal__subtitle">Your message has been accepted. You will recieve answer really soon!</div>
+
+                  <div class="contacts-form-modal__button">
+                     <button class="contacts-form-modal__btn"><span>close window</span><i></i></button>
+                  </div>
+                     
+               </div><!-- Contacts Form Modal-->
+
+               <div class="contacts-form-modal__overlay hidden"></div>
+
+            </div><!-- Contacts Form Item -->
+         </div><!-- Contacts Form -->
+
+
 
          <div class="contacts-form-right">
             <ul class="contacts-form-right__text">
@@ -88,7 +106,7 @@
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">10</p><span class="blue">&nbsp;form.send</span>(<span class="orange">message</span>);</li>
                <li class="contacts-form-right__stroke"><p class="contacts-form-right__number two-digit-number">11</p>})</li>
             </ul>
-         </div>
+         </div><!-- Contacts Form Right-->
 
       </section>
 
